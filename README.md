@@ -12,30 +12,32 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 
 ### Locale
 ```bash
-vi /etc/default/locale      # add: LC_CTYPE=zh_CN.UTF-8
-dpkg-reconfigure locales    # choose: en_US.UTF-8(default), zh_CN.UTF-8
+sudo vi /etc/default/locale     # add: LC_CTYPE=zh_CN.UTF-8
+sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
 ```
 
 ## 安装 Packages
 ### Packages Management
 ```bash
-apt-get install debfoster
+sudo apt-get install debfoster
 ```
 
 ### xorg
 ```bash
-debfoster xorg fontconfig
-debfoster openbox tint2 obconf obmenu lxappearance
-debfoster ibus-libpinyin
-debfoster geany xfe mupdf firefox-esr
+sudo debfoster xorg fontconfig
+sudo debfoster openbox tint2 obconf obmenu lxappearance
+sudo debfoster ibus-libpinyin
+sudo debfoster geany xfe mupdf firefox-esr
 ```
 
 ### Qt Creator
 ```bash
 # See http://wiki.qt.io/Install_Qt_5_on_Ubuntu
-debfoster build-essential
-debfoster libgl1-mesa-dev
-debfoster gdb git clang
+sudo debfoster build-essential
+sudo debfoster libgl1-mesa-dev
+sudo debfoster gdb git clang
+
+cd ~/Download
 wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
 chmod +x qt-unified-linux-x64-online.run
 ./qt-unified-linux-x64-online.run
@@ -43,7 +45,7 @@ chmod +x qt-unified-linux-x64-online.run
 
 ### CAN Utilities
 ```bash
-debfoster gcc
-debfoster libusb-1.0-0
-debfoster libeigen3-dev
+sudo debfoster gcc
+sudo debfoster libusb-1.0-0
+sudo debfoster libeigen3-dev
 ```
