@@ -1,6 +1,6 @@
 # Debian 使用笔记
 
-## 安装
+## 安装 Debian Base
 
 ### [Download media](https://www.debian.org/distrib/netinst) from [mirrors](https://www.debian.org/CD/http-ftp/#mirrors) and [write image to USB](https://www.debian.org/CD/faq/#write-usb)
 ```bash
@@ -14,4 +14,10 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 ```bash
 vi /etc/default/locale
 dpkg-reconfigure locales    # choose en_US.UTF-8, zh_CN.UTF-8
+```
+
+## 安装 Packages
+### Packages Management
+```bash
+apt-get install debfoster
 ```
