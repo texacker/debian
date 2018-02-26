@@ -9,3 +9,9 @@ wget http://mirrors.163.com/debian-cd/current/amd64/iso-cd/SHA1SUMS
 shasum -c SHA1SUMS
 sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 ```
+
+### Locale
+```bash
+vi /etc/default/locale
+dpkg-reconfigure locales    # choose en_US.UTF-8, zh_CN.UTF-8
+```
