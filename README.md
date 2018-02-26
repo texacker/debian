@@ -13,7 +13,7 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 ### Locale
 ```bash
 vi /etc/default/locale
-dpkg-reconfigure locales    # choose en_US.UTF-8, zh_CN.UTF-8
+dpkg-reconfigure locales    # choose en_US.UTF-8(default), zh_CN.UTF-8
 ```
 
 ## 安装 Packages
