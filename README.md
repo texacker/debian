@@ -21,3 +21,8 @@ dpkg-reconfigure locales    # choose en_US.UTF-8(default), zh_CN.UTF-8
 ```bash
 apt-get install debfoster
 ```
+
+### Qt Creator
+```bash
+# http://wiki.qt.io/Install_Qt_5_on_Ubuntu
+```
