@@ -36,6 +36,9 @@ debfoster geany xfe mupdf firefox-esr
 debfoster build-essential
 debfoster libgl1-mesa-dev
 debfoster gdb git clang
+wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
+chmod +x qt-unified-linux-x64-online.run
+./qt-unified-linux-x64-online.run
 ```
 
 ### CAN Utilities
