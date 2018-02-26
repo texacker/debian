@@ -20,6 +20,7 @@ sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
 ### Packages Management
 ```bash
 sudo apt-get install debfoster
+sudo debfoster -q
 ```
 
 ### xorg
