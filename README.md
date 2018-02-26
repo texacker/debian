@@ -22,7 +22,25 @@ dpkg-reconfigure locales    # choose en_US.UTF-8(default), zh_CN.UTF-8
 apt-get install debfoster
 ```
 
+### xorg
+```bash
+debfoster xorg fontconfig
+debfoster openbox tint2 obconf obmenu lxappearance
+debfoster ibus-libpinyin
+debfoster geany xfe mupdf firefox-esr
+```
+
 ### Qt Creator
 ```bash
-# http://wiki.qt.io/Install_Qt_5_on_Ubuntu
+# See http://wiki.qt.io/Install_Qt_5_on_Ubuntu
+debfoster build-essential
+debfoster libgl1-mesa-dev
+debfoster gdb git clang
+```
+
+### CAN Utilities
+```bash
+debfoster gcc
+debfoster libusb-1.0-0
+debfoster libeigen3-dev
 ```
