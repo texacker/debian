@@ -10,10 +10,18 @@ shasum -c SHA1SUMS
 sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 ```
 
-### Locale
+### System-Wide Configuration
 ```bash
+# locale
 sudo vi /etc/default/locale     # add: LC_CTYPE=zh_CN.UTF-8
 sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
+
+# users management
+groupadd debian
+useradd user
+
+# update & upgrade
+apt-get update && apt-get upgrade
 ```
 
 ## 安装 Packages
