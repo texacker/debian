@@ -17,8 +17,8 @@ sudo vi /etc/default/locale     # add: LC_CTYPE=zh_CN.UTF-8
 sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
 
 # users management
-sudo groupadd debian
-sudo useradd user
+sudo addgroup group
+sudo adduser user
 
 # update & upgrade
 sudo apt-get update && sudo apt-get upgrade
