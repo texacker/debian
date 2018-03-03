@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=/home/furao/.local/bin/Qt/MaintenanceTool
+Path=/home/furao/.local/bin/Qt
+Name=Qt Maintenance Tool
+GenericName=Install or uninstall Qt components.
+Icon=QtIcon
+Terminal=false
+Categories=Development;Qt;
