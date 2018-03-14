@@ -10,6 +10,17 @@ shasum -c SHA1SUMS
 sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 ```
 
+### Packages Management
+```bash
+sudo apt-get install debfoster
+sudo debfoster -q
+```
+
+### System Tools
+```bash
+sudo debfoster net-tools locale man-db
+```
+
 ### System-Wide Configuration
 ```bash
 # locale
@@ -18,19 +29,13 @@ sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
 
 # users management
 sudo addgroup group
-sudo adduser user
+sudo adduser -gid xxx user
 
 # update & upgrade
 sudo apt-get update && sudo apt-get upgrade
 ```
 
 ## 安装 Packages
-### Packages Management
-```bash
-sudo apt-get install debfoster
-sudo debfoster -q
-```
-
 ### xorg
 ```bash
 sudo debfoster xorg fontconfig
