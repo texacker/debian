@@ -66,3 +66,19 @@ sudo debfoster libeigen3-dev
 
 ## Others
 ### Install Debian 9 on Dell Precision T7810
+```bash
+# See https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
+
+# Setup BIOS:
+# * Boot Mode: UEFI
+# * Secure Boot: Off
+
+# 1. Install Debian 9 on Dell Precision T7810
+
+# 2. Re-enter rescure mode, and run
+mount -t vfat /dev/sda1 /mnt
+mkdir -p /mnt/EFI/BOOT
+cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
+
+# 3. Reboot
+```
