@@ -63,3 +63,6 @@ sudo debfoster gcc
 sudo debfoster libusb-1.0-0
 sudo debfoster libeigen3-dev
 ```
+
+## Others
+### Install Debian 9 on Dell Precision T7810
