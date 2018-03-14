@@ -82,3 +82,9 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 
 # 3. Reboot
 ```
+
+### X screen locker
+```bash
+sudo debfoster xtrlock
+xtrlock -f && top
+```
