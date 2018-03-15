@@ -88,3 +88,19 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 sudo debfoster xtrlock
 xtrlock -f && top
 ```
+
+### Immigrate Debian
+```bash
+sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-libpinyin geany xfe mupdf firefox-esr
+
+# Restore files/dirs :
+#   .config
+#   .gitconfig
+#   .local/share
+#   .mozilla
+#   .gtkrc-2.0
+#   .gtkrc-2.0.mine
+#   .Xresources.d
+#   .Xresources
+#   .xinitrc
+```
