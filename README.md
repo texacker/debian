@@ -94,13 +94,13 @@ xtrlock -f && top
 sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-libpinyin geany xfe mupdf firefox-esr
 
 # Restore files/dirs :
-#   .config
-#   .gitconfig
-#   .local/share
-#   .mozilla
-#   .gtkrc-2.0
-#   .gtkrc-2.0.mine
-#   .Xresources.d
-#   .Xresources
-#   .xinitrc
+# ~/.config
+# ~/.gitconfig
+# ~/.local/share
+# ~/.mozilla
+# ~/.gtkrc-2.0
+# ~/.gtkrc-2.0.mine
+# ~/.Xresources.d
+# ~/.Xresources
+# ~/.xinitrc
 ```
