@@ -96,11 +96,11 @@ sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-lib
 # Restore files/dirs :
 # ~/.config
 # ~/.gitconfig
-# ~/.local/share
-# ~/.mozilla
 # ~/.gtkrc-2.0
 # ~/.gtkrc-2.0.mine
+# ~/.local/share
+# ~/.mozilla
+# ~/.xinitrc
 # ~/.Xresources.d
 # ~/.Xresources
-# ~/.xinitrc
 ```
