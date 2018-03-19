@@ -48,8 +48,8 @@ sudo debfoster geany xfe mupdf firefox-esr
 ```bash
 # See http://wiki.qt.io/Install_Qt_5_on_Ubuntu
 sudo debfoster build-essential
-sudo debfoster libgl1-mesa-dev
-sudo debfoster gdb git clang
+sudo debfoster mesa-common-dev libgl1-mesa-dev
+sudo debfoster gdb clang cmake git
 
 cd ~/Downloads
 wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
