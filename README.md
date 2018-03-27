@@ -105,3 +105,10 @@ sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-lib
 # ~/.Xresources.d
 # ~/.Xresources
 ```
+
+### ntfs
+```bash
+sudo debfoster ntfs-3g
+sudo mount -t ntfs-3g /dev/sdc1 /mnt
+sudo umount /mnt
+```
