@@ -84,7 +84,7 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 #    1.  https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
 ```
 
-### X screen locker
+### X Screen Locker
 ```bash
 sudo debfoster xtrlock
 xtrlock -f && top
