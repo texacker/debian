@@ -117,3 +117,8 @@ sudo umount /mnt
 ```bash
 sudo debfoster webfs
 ```
+
+### Java Environment
+```bash
+sudo debfoster jflex cup eclipse-jdt
+```
