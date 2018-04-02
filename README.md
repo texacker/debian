@@ -112,3 +112,8 @@ sudo debfoster ntfs-3g
 sudo mount -t ntfs-3g /dev/sdc1 /mnt
 sudo umount /mnt
 ```
+
+### Lightweight Webserver
+```bash
+sudo debfoster webfs
+```
