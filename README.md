@@ -122,3 +122,8 @@ sudo debfoster webfs
 ```bash
 sudo debfoster jflex cup eclipse-jdt
 ```
+
+### Archivers for RAR
+```bash
+sudo debfoster unrar-free unar
+```
