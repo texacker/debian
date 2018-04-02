@@ -127,3 +127,8 @@ sudo debfoster jflex cup eclipse-jdt
 ```bash
 sudo debfoster unrar-free unar
 ```
+
+### Utilities for GFW :-/
+```bash
+sudo debfoster shadowsocks-libev supervisor proxychains
+```
