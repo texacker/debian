@@ -135,7 +135,7 @@ sudo debfoster shadowsocks-libev supervisor proxychains
 
 ### Pubkey Authentication
 ```bash
-# run ssh-keygen on remore_host :
+# run ssh-keygen on remote_host :
 ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
 
 # on ssh server, edit /etc/sshd.conf :
@@ -148,5 +148,5 @@ ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
 sudo systemctl restart sshd.service
 
 # add pubkey to authorized_keys :
-ssh remore_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
