@@ -132,3 +132,21 @@ sudo debfoster unrar-free unar
 ```bash
 sudo debfoster shadowsocks-libev supervisor proxychains
 ```
+
+### Pubkey Authentication
+```bash
+# run ssh-keygen on remore_host :
+ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
+
+# on ssh server, edit /etc/sshd.conf :
+# PubkeyAuthentication            yes
+# AuthorizedKeysFile              .ssh/authorized_keys .ssh/authorized_keys2
+# PasswordAuthentication          no
+# ChallengeResponseAuthentication no
+
+# and restart sshd :
+sudo systemctl restart sshd.service
+
+# add pubkey to authorized_keys :
+ssh remore_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+```
