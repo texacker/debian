@@ -18,7 +18,7 @@ sudo debfoster -q
 
 ### System Tools
 ```bash
-sudo debfoster net-tools locale man-db
+sudo debfoster net-tools locales man-db
 ```
 
 ### System-Wide Configuration
