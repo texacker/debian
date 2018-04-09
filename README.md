@@ -146,6 +146,8 @@ ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
 
 # and restart sshd :
 sudo systemctl restart sshd.service
+# or
+sudo service ssh restart
 
 # add pubkey to authorized_keys :
 ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
