@@ -152,3 +152,10 @@ sudo service ssh restart
 # add pubkey to authorized_keys :
 ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
+
+### PostgreSQL on Debian
+```bash
+sudo debfoster postgresql
+sudo debfoster libpq5 libpq-dev
+sudo debfoster libpqtypes0 libpqtypes-dev
+```
