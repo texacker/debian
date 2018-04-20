@@ -158,4 +158,22 @@ ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 sudo debfoster postgresql
 sudo debfoster libpq5 libpq-dev
 sudo debfoster libpqtypes0 libpqtypes-dev
+
+sudo passwd postgres
+sudo systemctl status postgresql.service
+sudo systemctl restart postgresql.service
+
+psql -U xxx_user -d xxx_db
+
+# PostgreSQL 的用户验证和权限：
+
+# Host-Based Authentication
+#   https://www.postgresql.org/docs/10/static/auth-pg-hba-conf.html
+
+# /etc/postgresql/9.6/main/pg_hba.conf:
+#   The first record with a matching connection type, client address, requested database, and user name is used to perform authentication.
+#   There is no “fall-through” or “backup”:
+#   if one record is chosen and the authentication fails, subsequent records are not considered.
+#   If no record matches, access is denied.
+#   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为拒绝授权。
 ```
