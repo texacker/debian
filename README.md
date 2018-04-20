@@ -175,5 +175,5 @@ psql -U xxx_user -d xxx_db
 #   There is no “fall-through” or “backup”:
 #   if one record is chosen and the authentication fails, subsequent records are not considered.
 #   If no record matches, access is denied.
-#   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为拒绝授权。
+#   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为授权被拒绝。
 ```
