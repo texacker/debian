@@ -12,8 +12,10 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 
 ### Packages Management
 ```bash
-sudo apt-get install debfoster
-sudo debfoster -q
+apt-get install debfoster
+debfoster -q
+
+debfoster sudo vim tmux
 ```
 
 ### System Tools
