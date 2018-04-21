@@ -16,6 +16,15 @@ apt-get install debfoster
 debfoster -q
 
 debfoster sudo vim tmux
+
+# Base Configuration:
+# ~/.bash_aliases
+# ~/.bashrc
+# ~/.inputrc
+# ~/.tmux.conf
+# ~/.vimrc
+# ~/.screenrc
+
 ```
 
 ### System Tools
