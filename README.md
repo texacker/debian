@@ -104,6 +104,7 @@ sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-lib
 # ~/.xinitrc
 # ~/.Xresources.d
 # ~/.Xresources
+ssh srv_host tar -C ~ -zcvf - .config .gitconfig .gtkrc-2.0 .gtkrc-2.0.mine .local .mozilla .xinitrc .Xresources.d .Xresources | ( cd ~ ; tar -zxvf - )
 ```
 
 ### ntfs
