@@ -19,8 +19,8 @@ debfoster sudo vim tmux
 
 # Base Configuration:
 # ~/.bash_aliases
-# ~/.bashrc
 # ~/.inputrc
+# ~/.bashrc
 # ~/.tmux.conf
 # ~/.vimrc
 # ~/.screenrc
