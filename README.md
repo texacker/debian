@@ -125,6 +125,11 @@ sudo mount -t ntfs-3g /dev/sdc1 /mnt
 sudo umount /mnt
 ```
 
+### SQLite3
+```bash
+sudo debfoster sqlite3 libsqlite3-dev
+```
+
 ### Lightweight Webserver
 ```bash
 sudo debfoster webfs
