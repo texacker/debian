@@ -15,7 +15,7 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 apt-get install debfoster
 debfoster -q
 
-debfoster sudo vim tmux
+debfoster sudo vim tmux rsync
 
 # Base Configuration:
 # ~/.bash_aliases
