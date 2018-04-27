@@ -17,7 +17,7 @@ debfoster -q
 
 debfoster sudo vim tmux rsync
 
-# Base Configuration:
+# Basic Configurations:
 # ~/.bash_aliases
 # ~/.inputrc
 # ~/.bashrc
