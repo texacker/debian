@@ -182,8 +182,11 @@ sudo systemctl restart postgresql.service
 
 psql -U xxx_user -d xxx_db
 
-# PostgreSQL Connections and Authentication
+# PostgreSQL Connection Settings:
 #   https://www.postgresql.org/docs/9.1/static/runtime-config-connection.html
+#   * listen_addresses
+#   * port
+#   * max_connections
 
 # PostgreSQL 的用户验证和权限：
 
