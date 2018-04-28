@@ -182,6 +182,9 @@ sudo systemctl restart postgresql.service
 
 psql -U xxx_user -d xxx_db
 
+# PostgreSQL Connections and Authentication
+#   https://www.postgresql.org/docs/9.1/static/runtime-config-connection.html
+
 # PostgreSQL 的用户验证和权限：
 
 # Host-Based Authentication
