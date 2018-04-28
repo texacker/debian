@@ -180,7 +180,7 @@ sudo passwd postgres
 sudo systemctl status postgresql.service
 sudo systemctl restart postgresql.service
 
-psql -U xxx_user -d xxx_db
+psql [-h ip_addr] -U xxx_user -d xxx_db
 
 # PostgreSQL Connection Settings:
 #   https://www.postgresql.org/docs/9.1/static/runtime-config-connection.html
