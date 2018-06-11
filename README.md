@@ -200,3 +200,9 @@ psql [-h ip_addr] -U xxx_user -d xxx_db
 #   If no record matches, access is denied.
 #   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为授权被拒绝。
 ```
+
+### 截屏
+```bash
+sudo debfoster scrot
+( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
+```
