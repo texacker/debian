@@ -206,3 +206,9 @@ psql [-h ip_addr] -U xxx_user -d xxx_db
 sudo debfoster scrot
 ( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
 ```
+
+### 串口
+```bash
+sudo debfoster microcom
+microcom -s 115200 -p /dev/ttyUSB0
+```
