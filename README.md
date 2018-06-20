@@ -212,3 +212,8 @@ sudo debfoster scrot
 sudo debfoster microcom
 microcom -s 115200 -p /dev/ttyUSB0
 ```
+
+### 3D Graphic Engine
+```bash
+sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-doc openscenegraph-3.4-examples
+```
