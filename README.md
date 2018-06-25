@@ -213,7 +213,14 @@ sudo debfoster microcom
 microcom -s 115200 -p /dev/ttyUSB0
 ```
 
-### 3D Graphic Engine
+### 3D Graphics
 ```bash
+# OpenGL:
+sudo debfoster libglm-dev libglew-dev libglfw-dev libassimp-dev
+
+# OpenSceneGraph:
 sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-doc openscenegraph-3.4-examples
+
+# OGRE:
+sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 ```
