@@ -224,3 +224,9 @@ sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-d
 # OGRE:
 sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 ```
+
+### Source Code Formatter
+```bash
+sudo debfoster astyle
+astyle --style=bsd -s4 [ --dry-run | -n ] [ -r ] ./*.{c,h}
+```
