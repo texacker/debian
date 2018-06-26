@@ -227,6 +227,7 @@ sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 
 ### Source Code Formatter
 ```bash
+# See: file:///usr/share/doc/astyle/html/astyle.html
 sudo debfoster astyle
 astyle --style=bsd -s4 [ --dry-run | -n ] [ -r ] ./*.{c,h}
 ```
