@@ -130,11 +130,15 @@ sudo umount /mnt
 sudo debfoster dosfstools
 sudo dd if=/dev/zero of=/dev/sdX bs=4k && sync
 sudo fdisk /dev/sdX
-#1. Using command 'o' to create a new empty DOS partition table.
-#2. Using command 'n' to add a new partition.
-#3. Using command 'w' to write table to disk and exit.
+# 1. Using command 'o' to create a new empty DOS partition table.
+# 2. Using command 'n' to add a new partition.
+# 3. Using command 'w' to write table to disk and exit.
 sudo mkdosfs -F 32 -I /dev/sdX1
 sudo eject /dev/sdX
+# References
+#   1. https://askubuntu.com/questions/22381/how-to-format-a-usb-flash-drive
+#   2. https://www.garron.me/en/go2linux/format-usb-drive-fat32-file-system-ubuntu-linux.html
+
 ```
 
 ### SQLite3
