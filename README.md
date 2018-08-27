@@ -125,6 +125,18 @@ sudo mount -t ntfs-3g /dev/sdc1 /mnt
 sudo umount /mnt
 ```
 
+### Using USB flash drive
+```bash
+sudo debfoster dosfstools
+sudo dd if=/dev/zero of=/dev/sdX bs=4k && sync
+sudo fdisk /dev/sdX
+#1. Using command 'o' to create a new empty DOS partition table.
+#2. Using command 'n' to add a new partition.
+#3. Using command 'w' to write table to disk and exit.
+sudo mkdosfs -F 32 -I /dev/sdX1
+sudo eject /dev/sdX
+```
+
 ### SQLite3
 ```bash
 sudo debfoster sqlite3 libsqlite3-dev
