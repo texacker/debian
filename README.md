@@ -128,6 +128,7 @@ sudo umount /mnt
 ### Using USB flash drive
 ```bash
 sudo debfoster dosfstools
+sudo fdisk -l
 sudo dd if=/dev/zero of=/dev/sdX bs=4k && sync
 sudo fdisk /dev/sdX
 # 1. Using command 'o' to create a new empty DOS partition table.
