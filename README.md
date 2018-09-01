@@ -248,3 +248,9 @@ sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 sudo debfoster astyle
 astyle --style=bsd -s4 [ --dry-run | -n ] [ -r ] ./*.{c,h}
 ```
+
+### Generate Prime Numbers
+```bash
+sudo debfoster primesieve
+primesieve [START] STOP -p
+```
