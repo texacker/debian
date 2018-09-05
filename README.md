@@ -12,7 +12,7 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 
 ### Packages Management
 ```bash
-apt-get install debfoster
+apt install debfoster
 debfoster -q
 
 debfoster sudo vim tmux rsync
@@ -43,7 +43,7 @@ sudo addgroup group
 sudo adduser -gid xxx user
 
 # update & upgrade
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 ```
 
 ## 安装 Packages
