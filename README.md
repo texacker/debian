@@ -258,5 +258,7 @@ primesieve [START] STOP -p
 ### Document Preparing
 ```bash
 sudo debfoster texlive-full pdftk
+
+# Applies a PDF watermark to the background of a single input PDF:
 pdftk in.pdf background back.pdf output out.pdf
 ```
