@@ -258,4 +258,5 @@ primesieve [START] STOP -p
 ### Document Preparing
 ```bash
 sudo debfoster texlive-full pdftk
+pdftk in.pdf background back.pdf output out.pdf
 ```
