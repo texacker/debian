@@ -254,3 +254,8 @@ astyle --style=bsd -s4 [ --dry-run | -n ] [ -r ] ./*.{c,h}
 sudo debfoster primesieve
 primesieve [START] STOP -p
 ```
+
+### Document Preparing
+```bash
+sudo debfoster texlive-full pdftk
+```
