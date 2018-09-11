@@ -50,7 +50,8 @@ sudo apt update && sudo apt upgrade
 ### xorg
 ```bash
 sudo debfoster xorg fontconfig
-sudo debfoster openbox tint2 obconf obmenu lxappearance gcolor2
+sudo debfoster openbox tint2
+sudo debfoster obconf obmenu lxappearance gcolor2
 sudo debfoster ibus-libpinyin
 sudo debfoster geany xfe mupdf firefox-esr
 ```
