@@ -284,6 +284,8 @@ sudo debfoster g++-arm-linux-gnueabihf
 
 # 手动安装，可以选择旧版本
 # 因为硬件环境下的 stdc++ 等的版本一般滞后，太新的交叉编译器编译出来的，拷贝过去不能执行
+
+# M6G2C 系统目前（2018-09-12）只支持 Latest 4
 wget https://releases.linaro.org/components/toolchain/binaries/latest-4/arm-linux-gnueabihf/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
 tar Jxvf -C ~/.local gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
 export PATH=~/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH
