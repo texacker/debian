@@ -274,3 +274,30 @@ pdftk in.pdf background back.pdf output out.pdf
 ```bash
 sudo debfoster swi-prolog-nox
 ```
+
+### debian 下交叉编译 ZeroMQ for ARM (i.MX6UL)
+```bash
+# 安装交叉编译工具
+
+# 自动安装，最新版
+sudo debfoster g++-arm-linux-gnueabihf
+
+# 手动安装，可以选择版本
+# 因为硬件环境下的 stdc++ 等的版本一般滞后，太新的交叉编译器编译出来的，拷贝过去不能执行
+wget https://releases.linaro.org/components/toolchain/binaries/latest-4/arm-linux-gnueabihf/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
+tar Jxvf -C ~/.local gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
+export PATH=~/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH
+
+# 编译 libzmq
+wget https://github.com/zeromq/libzmq/releases/download/v4.2.3/zeromq-4.2.3.tar.gz
+tar zxvf zeromq-4.2.3.tar.gz
+cd zeromq-4.2.3
+./configure --help
+./configure --prefix=`pwd`/dist-build/ --host=arm-linux-gnueabihf
+make
+make check
+make install
+make clean
+make distclean
+```
+
