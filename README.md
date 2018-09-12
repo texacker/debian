@@ -229,6 +229,8 @@ sudo debfoster scrot
 ```bash
 sudo debfoster microcom minicom
 microcom -s 115200 -p /dev/ttyUSB0
+minicom -s
+minicom -c on
 ```
 
 ### 3D Graphics
