@@ -282,7 +282,7 @@ sudo debfoster swi-prolog-nox
 # 自动安装，最新版
 sudo debfoster g++-arm-linux-gnueabihf
 
-# 手动安装，可以选择版本
+# 手动安装，可以选择旧版本
 # 因为硬件环境下的 stdc++ 等的版本一般滞后，太新的交叉编译器编译出来的，拷贝过去不能执行
 wget https://releases.linaro.org/components/toolchain/binaries/latest-4/arm-linux-gnueabihf/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
 tar Jxvf -C ~/.local gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
