@@ -227,9 +227,11 @@ sudo debfoster scrot
 
 ### 串口
 ```bash
-sudo debfoster microcom minicom
+sudo debfoster microcom
 microcom -s 115200 -p /dev/ttyUSB0
-minicom -s
+
+sudo debfoster minicom
+sudo minicom -s
 minicom -c on
 ```
 
