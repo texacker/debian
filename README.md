@@ -285,7 +285,7 @@ sudo debfoster g++-arm-linux-gnueabihf
 # 手动安装，可以选择旧版本
 # 因为硬件环境下的 stdc++ 等的版本一般滞后，太新的交叉编译器编译出来的，拷贝过去不能执行
 
-# M6G2C 系统目前（2018-09-12）只支持 Latest 4
+# zlg.cn M6G2C 系统目前（2018-09-12）只支持 Latest 4
 # 更新版本的交叉编译工具编译出来的可执行程序会输出类似错误：
 # /usr/lib/arm-linux-gnueabihf/libstdc++.so.6: version `CXXABI_1.3.9' not found (required by /opt/usr/local/lib/libzmq.so.5)
 # /usr/lib/arm-linux-gnueabihf/libstdc++.so.6: version `GLIBCXX_3.4.21' not found (required by /opt/usr/local/lib/libzmq.so.5)
