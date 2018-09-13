@@ -1,2 +1,1 @@
 export LC_CTYPE=zh_CN.UTF-8
-export PATH=$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH
