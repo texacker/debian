@@ -281,7 +281,7 @@ sudo debfoster swi-prolog-nox
 ```bash
 # 一：安装交叉编译工具
 
-# 自动安装，最新版
+# apt 安装，最新版
 sudo debfoster g++-arm-linux-gnueabihf
 
 # 手动安装，可以选择旧版本
