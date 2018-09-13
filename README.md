@@ -279,7 +279,7 @@ sudo debfoster swi-prolog-nox
 
 ### debian 下交叉编译 ZeroMQ for ARM (i.MX6UL)
 ```bash
-# 安装交叉编译工具
+# 一：安装交叉编译工具
 
 # 自动安装，最新版
 sudo debfoster g++-arm-linux-gnueabihf
@@ -296,7 +296,7 @@ wget https://releases.linaro.org/components/toolchain/binaries/latest-4/arm-linu
 tar Jxvf -C ~/.local gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf.tar.xz
 export PATH=~/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH
 
-# 编译 libzmq
+# 二：编译 libzmq
 wget https://github.com/zeromq/libzmq/releases/download/v4.2.3/zeromq-4.2.3.tar.gz
 tar zxvf zeromq-4.2.3.tar.gz
 cd zeromq-4.2.3
