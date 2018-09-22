@@ -206,6 +206,7 @@ sudo debfoster libpqtypes0 libpqtypes-dev
 #   https://www.postgresql.org/docs/10/static/auth-pg-hba-conf.html
 
 # /etc/postgresql/9.6/main/postgresql.conf:
+listen_addresses = '*'
 
 # /etc/postgresql/9.6/main/pg_hba.conf:
 #   The first record with a matching connection type, client address, requested database, and user name is used to perform authentication.
