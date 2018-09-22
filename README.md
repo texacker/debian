@@ -194,12 +194,6 @@ sudo debfoster postgresql
 sudo debfoster libpq5 libpq-dev
 sudo debfoster libpqtypes0 libpqtypes-dev
 
-sudo passwd postgres
-sudo systemctl status postgresql.service
-sudo systemctl restart postgresql.service
-
-psql [-h ip_addr] -U xxx_user -d xxx_db
-
 # PostgreSQL Connection Settings:
 #   https://www.postgresql.org/docs/9.1/static/runtime-config-connection.html
 #   * listen_addresses
@@ -219,6 +213,13 @@ psql [-h ip_addr] -U xxx_user -d xxx_db
 #   if one record is chosen and the authentication fails, subsequent records are not considered.
 #   If no record matches, access is denied.
 #   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为授权被拒绝。
+
+sudo systemctl status postgresql.service
+sudo systemctl restart postgresql.service
+
+# sudo passwd postgres
+
+psql [-h ip_addr] -U xxx_user -d xxx_db
 ```
 
 ### 截屏
