@@ -219,6 +219,8 @@ sudo systemctl status postgresql.service
 sudo systemctl restart postgresql.service
 
 # sudo passwd postgres
+# OR:
+# sudo -u postgres psql postgres
 
 psql [-h ip_addr] -U xxx_user -d xxx_db
 ```
