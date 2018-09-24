@@ -74,6 +74,10 @@ chmod +x qt-unified-linux-x64-online.run
 sudo debfoster build-essential
 sudo debfoster libusb-1.0-0
 sudo debfoster libeigen3-dev
+
+# SocketCAN
+sudo debfoster libsocketcan-dev
+sudo debfoster can-utils
 ```
 
 ## Others
