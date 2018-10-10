@@ -319,3 +319,8 @@ make clean
 make distclean
 ```
 
+### Video Player
+```bash
+sudo debfoster dragonplayer
+dragon [URL] &
+```
