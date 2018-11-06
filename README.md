@@ -233,6 +233,8 @@ psql [-h ip_addr] -U xxx_user -d xxx_db
 ```bash
 sudo debfoster scrot
 ( cd /paht/to/save/screenshot ; scrot -c -d 5 -u; switch_to_desktop_with_Alt-Tab )
+
+# Or, run: ~/bin/my_scrot.sh [times]
 ```
 
 ### 串口
