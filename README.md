@@ -250,7 +250,7 @@ minicom -c on
 ### 3D Graphics
 ```bash
 # OpenGL:
-sudo debfoster libglm-dev libglew-dev libglfw3-dev freeglut3-dev libassimp-dev
+sudo debfoster libglm-dev libglew-dev libglfw3-dev freeglut3-dev libassimp-dev libmagick++-dev
 
 # OpenSceneGraph:
 sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-doc openscenegraph-3.4-examples
