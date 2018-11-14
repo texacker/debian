@@ -252,6 +252,7 @@ minicom -c on
 # nVidia Driver:
 # https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
 lspci -nn | grep -i nvidia
+lsmod | grep -i nouveau
 sudo cp sources.list sources.list.orig && sudo sed -i 's/stretch main$/stretch main contrib non-free/' sources.list
 sudo apt update && sudo apt upgrade
 sudo debfoster linux-headers-$(uname -r | sed 's/[^-]*-[^-]*-//')
