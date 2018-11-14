@@ -253,7 +253,7 @@ minicom -c on
 # https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
 lspci -nn | grep -i nvidia
 lsmod | grep -i nouveau
-sudo cp sources.list sources.list.orig && sudo sed -i 's/stretch main$/stretch main contrib non-free/' sources.list
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.orig && sudo sed -i 's/stretch main$/stretch main contrib non-free/' /etc/apt/sources.list
 sudo apt update && sudo apt upgrade
 sudo debfoster linux-headers-$(uname -r | sed 's/[^-]*-[^-]*-//')
 sudo debfoster nvidia-driver
