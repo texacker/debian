@@ -249,6 +249,15 @@ minicom -c on
 
 ### 3D Graphics
 ```bash
+# nVidia Driver:
+# https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+lspci -nn | grep -i nvidia
+mv sources.list sources.list.default && sed 's/stretch main$/stretch main contrib non-free/' sources.list.default > sources.list
+sudo apt update && sudo apt upgrade
+sudo debfoster linux-headers-$(uname -r|sed 's/[^-]*-[^-]*-//')
+sudo debfoster nvidia-driver
+ll /etc/modprobe.d/
+
 # OpenGL:
 sudo debfoster libglm-dev libglew-dev libglfw3-dev freeglut3-dev libassimp-dev libmagick++-dev
 
