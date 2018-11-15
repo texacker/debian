@@ -274,7 +274,7 @@ sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 ```bash
 # See: file:///usr/share/doc/astyle/html/astyle.html
 sudo debfoster astyle
-astyle --style=bsd -s4 [ --dry-run | -n ] [ -r ] ./*.{c,h}
+astyle --style=bsd -s4 [ -r ] [ --dry-run | -n ] "./*.cpp"
 
 sudo debfoster source-highlight
 source-highlight --data-dir ~/.source-highlight -d --tab=4 -i input_file -o output_file
