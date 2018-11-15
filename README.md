@@ -249,7 +249,8 @@ minicom -c on
 
 ### 3D Graphics
 ```bash
-# nVidia Driver: https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+# nVidia Driver:
+#   see: https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
 lspci -nn | grep -i nvidia
 lsmod | grep -i nouveau
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.orig && sudo sed -i 's/stretch main$/stretch main contrib non-free/' /etc/apt/sources.list
