@@ -250,7 +250,7 @@ minicom -c on
 ### 3D Graphics
 ```bash
 # nVidia Driver:
-# https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+# - https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
 lspci -nn | grep -i nvidia
 lsmod | grep -i nouveau
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.orig && sudo sed -i 's/stretch main$/stretch main contrib non-free/' /etc/apt/sources.list
@@ -261,7 +261,8 @@ ll /etc/modprobe.d/
 sudo reboot
 
 # OpenGL:
-sudo debfoster libglm-dev libglew-dev libglfw3-dev freeglut3-dev libassimp-dev libmagick++-dev
+sudo debfoster libglew-dev libglfw3-dev freeglut3-dev
+sudo debfoster libglm-dev libassimp-dev libmagick++-dev libsoil-dev
 
 # OpenSceneGraph:
 sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-doc openscenegraph-3.4-examples
