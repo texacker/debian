@@ -262,7 +262,8 @@ ll /etc/modprobe.d/
 sudo reboot
 
 # OpenGL:
-sudo debfoster libglew-dev libglfw3-dev freeglut3-dev
+sudo debfoster freeglut3-dev libglfw3-dev
+sudo debfoster libglew-dev
 sudo debfoster libglm-dev libassimp-dev libmagick++-dev libsoil-dev
 
 # OpenSceneGraph:
