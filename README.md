@@ -262,7 +262,7 @@ sudo reboot
 
 # OpenGL:
 sudo debfoster libglew-dev                  # OpenGL Loading Library
-sudo debfoster freeglut3-dev libglfw3-dev   # API for windowing system
+sudo debfoster freeglut3-dev libglfw3-dev   # API for windowing sub-systems(GLX, WGL, CGL ...)
 sudo debfoster libglm-dev libassimp-dev libmagick++-dev libsoil-dev
 
 # OpenSceneGraph:
