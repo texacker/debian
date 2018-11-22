@@ -272,7 +272,7 @@ sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-d
 sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 ```
 
-### Source Code Formatter & Highlighter
+### Formatter & Highlighter
 ```bash
 # See: file:///usr/share/doc/astyle/html/astyle.html
 sudo debfoster astyle
