@@ -281,6 +281,9 @@ astyle --style=bsd -s4 [ -r ] [ --dry-run | -n ] "./*.cpp"
 sudo debfoster source-highlight
 source-highlight --data-dir ~/.source-highlight -d --tab=4 -i input_file -o output_file
 sed -i -e 's/<body bgcolor="[^"]*">/<body bgcolor="#D4D0C8">/' -e 's/charset=iso-8859-1/charset=utf-8/' output_file
+
+# XML Reformatter
+sudo debfoster xmlindent xmlformat-perl
 ```
 
 ### Generate Prime Numbers
