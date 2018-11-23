@@ -299,6 +299,9 @@ sudo debfoster texlive-full pdftk
 
 # Applies a PDF watermark to the background of a single input PDF:
 pdftk in.pdf background back.pdf output out.pdf
+
+# PDF to HTML:
+sudo debfoster pdf2htmlex
 ```
 
 ### Prolog Programming
