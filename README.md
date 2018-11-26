@@ -262,7 +262,7 @@ ll /etc/modprobe.d/
 sudo reboot
 
 # Backing out in case of failure:
-#   - https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+#   - https://wiki.debian.org/NvidiaGraphicsDrivers/#Backing_out_in_case_of_failure
 sudo apt-get purge nvidia.    # don't forget the "." dot, it erases every package with "nvidia" on its name.
 sudo apt-get install --reinstall xserver-xorg
 sudo apt-get install --reinstall xserver-xorg-video-nouveau
