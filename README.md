@@ -249,7 +249,8 @@ minicom -c on
 
 ### 3D Graphics
 ```bash
-# nVidia Driver: https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+# nVidia Driver:
+#   https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
 lspci -nn | grep -i nvidia
 lsmod | grep -i nouveau
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.orig
@@ -258,6 +259,13 @@ sudo apt update && sudo apt upgrade
 sudo debfoster linux-headers-$(uname -r | sed 's/[^-]*-[^-]*-//')
 sudo debfoster nvidia-driver
 ll /etc/modprobe.d/
+sudo reboot
+
+# Backing out in case of failure:
+#   https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+sudo apt-get purge nvidia.    # don't forget the "." dot, it erases every package with "nvidia" on its name.
+sudo apt-get install --reinstall xserver-xorg
+sudo apt-get install --reinstall xserver-xorg-video-nouveau
 sudo reboot
 
 # OpenGL:
