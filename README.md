@@ -355,6 +355,16 @@ sudo debfoster dragonplayer
 dragon [URL] &
 ```
 
+### Enable/disable synaptics touchpad in Debian 9
+```bash
+# https://unix.stackexchange.com/questions/388963/how-can-i-enable-disable-the-synaptics-touchpad-in-debian-9-with-libinput
+sudo debfoster xinput
+
+xinput list
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0     # Disable
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
+```
+
 ### Screen Recorder
 ```bash
 sudo debfoster simplescreenrecorder
