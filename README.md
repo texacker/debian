@@ -324,3 +324,9 @@ make distclean
 sudo debfoster dragonplayer
 dragon [URL] &
 ```
+
+### Screen Recorder
+```bash
+sudo debfoster simplescreenrecorder
+simplescreenrecorder &
+```
