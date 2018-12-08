@@ -1,5 +1,6 @@
 astyle
 bc
+bison
 blender-ogrexml-1.9
 build-essential
 chromium
@@ -13,10 +14,12 @@ curl
 debfoster
 discover
 dosfstools
+dragonplayer
 eclipse-cdt
 eclipse-jdt
 eject
 firefox-esr
+flex
 fontconfig
 freeglut3-dev
 gawk
@@ -39,10 +42,10 @@ libglm-dev
 libogre-1.9-dev
 libois-dev
 libopenscenegraph-3.4-dev
-libpq5
 libpq-dev
-libpqtypes0
+libpq5
 libpqtypes-dev
+libpqtypes0
 libreoffice
 libsqlite3-dev
 libusb-1.0-0
@@ -51,6 +54,7 @@ linux-image-4.9.0-7-amd64
 linux-image-amd64
 lxappearance
 man-db
+markdown
 microcom
 minicom
 mupdf

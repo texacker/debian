@@ -232,7 +232,9 @@ psql [-h ip_addr] -U xxx_user -d xxx_db
 ### 截屏
 ```bash
 sudo debfoster scrot
-( cd /paht/to/save/screenshot ; scrot -c -d 5 ; switch_to_desktop_with_Alt-Tab )
+( cd /paht/to/save/screenshot ; scrot -c -d 5 -u; switch_to_desktop_with_Alt-Tab )
+
+# Or, run: ~/bin/my_scrot.sh [times]
 ```
 
 ### 串口
@@ -247,8 +249,29 @@ minicom -c on
 
 ### 3D Graphics
 ```bash
+# nVidia Driver:
+#   - https://wiki.debian.org/NvidiaGraphicsDrivers#stretch
+lspci -nn | grep -i nvidia
+lsmod | grep -i nouveau
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.orig
+sudo sed -i 's/stretch main$/stretch main contrib non-free/' /etc/apt/sources.list
+sudo apt update && sudo apt upgrade
+sudo debfoster linux-headers-$(uname -r | sed 's/[^-]*-[^-]*-//')
+sudo debfoster nvidia-driver
+ll /etc/modprobe.d/
+sudo reboot
+
+# Backing out in case of failure:
+#   - https://wiki.debian.org/NvidiaGraphicsDrivers/#Backing_out_in_case_of_failure
+sudo apt-get purge nvidia.    # don't forget the "." dot, it erases every package with "nvidia" on its name.
+sudo apt-get install --reinstall xserver-xorg
+sudo apt-get install --reinstall xserver-xorg-video-nouveau
+sudo reboot
+
 # OpenGL:
-sudo debfoster libglm-dev libglew-dev libglfw3-dev freeglut3-dev libassimp-dev
+sudo debfoster libglew-dev                  # OpenGL Loading Library
+sudo debfoster freeglut3-dev libglfw3-dev   # API for windowing sub-systems(GLX, WGL, CGL ...)
+sudo debfoster libglm-dev libassimp-dev libmagick++-dev libsoil-dev
 
 # OpenSceneGraph:
 sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-doc openscenegraph-3.4-examples
@@ -257,15 +280,19 @@ sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-d
 sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
 ```
 
-### Source Code Formatter & Highlighter
+### Formatter & Highlighter
 ```bash
 # See: file:///usr/share/doc/astyle/html/astyle.html
 sudo debfoster astyle
-astyle --style=bsd -s4 [ --dry-run | -n ] [ -r ] ./*.{c,h}
+astyle --style=bsd -s4 [ -r ] [ --dry-run | -n ] "./*.cpp"
 
+# code to HTML
 sudo debfoster source-highlight
 source-highlight --data-dir ~/.source-highlight -d --tab=4 -i input_file -o output_file
 sed -i -e 's/<body bgcolor="[^"]*">/<body bgcolor="#D4D0C8">/' -e 's/charset=iso-8859-1/charset=utf-8/' output_file
+
+# XML Reformatter
+sudo debfoster xmlindent xmlformat-perl
 ```
 
 ### Generate Prime Numbers
@@ -280,6 +307,9 @@ sudo debfoster texlive-full pdftk
 
 # Applies a PDF watermark to the background of a single input PDF:
 pdftk in.pdf background back.pdf output out.pdf
+
+# PDF to HTML:
+sudo debfoster pdf2htmlex
 ```
 
 ### Prolog Programming
