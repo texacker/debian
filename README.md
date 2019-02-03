@@ -370,3 +370,12 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
 sudo debfoster simplescreenrecorder
 simplescreenrecorder &
 ```
+
+### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
+```bash
+# https://wiki.debian.org/iwlwifi
+# https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
+
+sudo debfoster firmware-iwlwifi
+sudo debfoster wpasupplicant
+```
