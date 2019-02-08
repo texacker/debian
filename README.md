@@ -392,10 +392,10 @@ sudo debfoster autossh
 # https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
 # https://sourceforge.net/projects/aruco/
 
-sudo debfoster build-essential                                                                                  // compiler
-sudo debfoster cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev                 // required
-sudo debfoster python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff5-dev libdc1394-22-dev  // optional
-sudo debfoster libjasper-dev                                                                                    // ?
+sudo debfoster build-essential                                                                                  # compiler
+sudo debfoster cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev                 # required
+sudo debfoster python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff5-dev libdc1394-22-dev  # optional
+sudo debfoster libjasper-dev                                                                                    # ?
 
 mkdir -p <opencv_dir> && cd <opencv_dir>
 
