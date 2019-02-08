@@ -380,6 +380,6 @@ sudo debfoster firmware-iwlwifi
 sudo debfoster wpasupplicant
 ```
 
-### Linux on aliyun cloud
+### Linux on aliyun VPS
 
 ### OpenCV & ArUco
