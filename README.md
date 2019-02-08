@@ -383,3 +383,9 @@ sudo debfoster wpasupplicant
 ### Linux on aliyun VPS
 
 ### OpenCV & ArUco
+```bash
+# https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
+# https://sourceforge.net/projects/aruco/
+
+env PVAPI_ROOT="$HOME/.local/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local -DBUILD_EXAMPLES=ON -DINSTALL_C_EXAMPLES=ON -DBUILD_TESTS=ON -DINSTALL_TESTS=ON -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules -DWITH_PVAPI=ON ../opencv
+```
