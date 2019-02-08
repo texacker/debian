@@ -379,3 +379,5 @@ simplescreenrecorder &
 sudo debfoster firmware-iwlwifi
 sudo debfoster wpasupplicant
 ```
+
+### Linux on aliyun cloud
