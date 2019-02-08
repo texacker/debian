@@ -381,6 +381,11 @@ sudo debfoster wpasupplicant
 ```
 
 ### Linux on aliyun VPS
+```bash
+# http://server.it168.com/a2018/0612/3208/000003208560.shtml
+
+sudo debfoster autossh
+```
 
 ### OpenCV & ArUco
 ```bash
