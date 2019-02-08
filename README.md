@@ -389,8 +389,8 @@ sudo debfoster autossh
 
 ### OpenCV & ArUco
 ```bash
+# OpenCV:
 # https://docs.opencv.org/master/d7/d9f/tutorial_linux_install.html
-# https://sourceforge.net/projects/aruco/
 
 sudo debfoster build-essential                                                                                  # compiler
 sudo debfoster cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev                 # required
@@ -408,4 +408,8 @@ env PVAPI_ROOT="$HOME/.opt/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TY
 make && \
 env OPENCV_TEST_DATA_PATH=../opencv_extra/testdata/ ./bin/opencv_test_core && \
 make install clean
+
+# ArUco:
+# http://www.uco.es/investiga/grupos/ava/node/26
+# https://sourceforge.net/projects/aruco/
 ```
