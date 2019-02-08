@@ -395,7 +395,7 @@ sudo debfoster autossh
 sudo debfoster build-essential                                                                                  # compiler
 sudo debfoster cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev                 # required
 sudo debfoster python-dev python-numpy libtbb2 libtbb-dev libjpeg-dev libpng-dev libtiff5-dev libdc1394-22-dev  # optional
-sudo debfoster libjasper-dev                                                                                    # ?
+sudo debfoster libjasper-dev                                                                                    # sid (unstable) ?
 
 mkdir -p <opencv_dir> && cd <opencv_dir>
 
