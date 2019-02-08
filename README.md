@@ -389,7 +389,7 @@ sudo debfoster autossh
 
 ### OpenCV & ArUco
 ```bash
-# Prosilica/Aravis GigE API
+# Prosilica/Aravis GigE API:
 # https://wiki.gnome.org/action/show/Projects/Aravis?action=show&redirect=Aravis
 # https://github.com/AravisProject/aravis
 # https://www.alliedvision.com/en/support/software-downloads.html
