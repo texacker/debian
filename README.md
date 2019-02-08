@@ -404,7 +404,7 @@ git clone https://github.com/opencv/opencv_contrib.git
 git clone https://github.com/opencv/opencv_extra.git
 
 mkdir build && cd build && \
-env PVAPI_ROOT="$HOME/.opt/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local -DBUILD_EXAMPLES=ON -DINSTALL_C_EXAMPLES=ON -DBUILD_TESTS=ON -DINSTALL_TESTS=ON -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules -DWITH_PVAPI=ON ../opencv \
+env PVAPI_ROOT="$HOME/.opt/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local -DBUILD_EXAMPLES=ON -DINSTALL_C_EXAMPLES=ON -DBUILD_TESTS=ON -DINSTALL_TESTS=ON -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules -DWITH_PVAPI=ON ../opencv && \
 make && \
 env OPENCV_TEST_DATA_PATH=../opencv_extra/testdata/ ./bin/opencv_test_core && \
 make install clean
