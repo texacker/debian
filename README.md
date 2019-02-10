@@ -177,7 +177,7 @@ sudo debfoster shadowsocks-libev supervisor proxychains
 # run ssh-keygen on remote_host :
 ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
 
-# on ssh server, edit /etc/sshd.conf :
+# on ssh server, edit /etc/ssh/sshd.conf :
 # PubkeyAuthentication            yes
 # AuthorizedKeysFile              .ssh/authorized_keys .ssh/authorized_keys2
 # PasswordAuthentication          no
@@ -385,6 +385,12 @@ sudo debfoster wpasupplicant
 # http://server.it168.com/a2018/0612/3208/000003208560.shtml
 
 sudo debfoster autossh
+
+# on ssh server, edit /etc/ssh/sshd.conf :
+# PubkeyAuthentication            yes
+# PasswordAuthentication          no
+# ChallengeResponseAuthentication no
+# GatewayPorts                    clientspecified
 ```
 
 ### OpenCV & ArUco
