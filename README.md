@@ -384,13 +384,14 @@ sudo debfoster wpasupplicant
 ```bash
 # http://server.it168.com/a2018/0612/3208/000003208560.shtml
 
-sudo debfoster autossh
-
 # on ssh server, edit /etc/ssh/sshd_config :
 # PubkeyAuthentication            yes
 # PasswordAuthentication          no
 # ChallengeResponseAuthentication no
 # GatewayPorts                    clientspecified
+
+# on ssh client :
+sudo debfoster autossh
 ```
 
 ### OpenCV & ArUco
