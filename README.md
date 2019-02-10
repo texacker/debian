@@ -392,6 +392,8 @@ sudo debfoster wpasupplicant
 
 # on ssh client :
 sudo debfoster autossh
+
+# /etc/rc.local
 ```
 
 ### OpenCV & ArUco
