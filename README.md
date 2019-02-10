@@ -177,7 +177,7 @@ sudo debfoster shadowsocks-libev supervisor proxychains
 # run ssh-keygen on remote_host :
 ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
 
-# on ssh server, edit /etc/ssh/sshd.conf :
+# on ssh server, edit /etc/ssh/sshd_config :
 # PubkeyAuthentication            yes
 # AuthorizedKeysFile              .ssh/authorized_keys .ssh/authorized_keys2
 # PasswordAuthentication          no
@@ -386,7 +386,7 @@ sudo debfoster wpasupplicant
 
 sudo debfoster autossh
 
-# on ssh server, edit /etc/ssh/sshd.conf :
+# on ssh server, edit /etc/ssh/sshd_config :
 # PubkeyAuthentication            yes
 # PasswordAuthentication          no
 # ChallengeResponseAuthentication no
