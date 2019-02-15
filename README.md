@@ -394,6 +394,7 @@ sudo debfoster wpasupplicant
 sudo debfoster autossh
 
 # /etc/rc.local
+su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
 ```
 
 ### OpenCV & ArUco
