@@ -427,4 +427,15 @@ make install clean
 # ArUco:
 # http://www.uco.es/investiga/grupos/ava/node/26
 # https://sourceforge.net/projects/aruco/
+
+sudo debfoster libeigen3-dev
+
+mkdir -p <aruco_dir> && cd <aruco_dir>
+unzip aruco-3.0.13.zip
+
+mkdir build && cd build && \
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTALL_PREFIX=$HOME/.local -DUSE_OWN_EIGEN3=OFF ../aruco-3.0.13
+make
+make install
+make clean
 ```
