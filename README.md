@@ -431,7 +431,7 @@ make install clean
 sudo debfoster libeigen3-dev
 
 mkdir -p <aruco_dir> && cd <aruco_dir>
-# Download from : https://sourceforge.net/projects/aruco/files/latest/download
+# Download ArUco from : https://sourceforge.net/projects/aruco/files/latest/download
 unzip aruco-3.0.13.zip
 
 mkdir build && cd build && \
