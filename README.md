@@ -440,5 +440,8 @@ make
 make install
 make clean
 
+# Print marker:
+env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_print_marker 70 ./ARUCO_MIP_36h12_00070.png -e -bs 300
+
 # Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
 ```
