@@ -439,4 +439,6 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTAL
 make
 make install
 make clean
+
+# Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
 ```
