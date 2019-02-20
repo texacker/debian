@@ -420,7 +420,7 @@ git clone https://github.com/opencv/opencv_extra.git
 
 mkdir build && cd build && \
 env PVAPI_ROOT="$HOME/.opt/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local -DBUILD_EXAMPLES=ON -DINSTALL_C_EXAMPLES=ON -DBUILD_TESTS=ON -DINSTALL_TESTS=ON -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules -DWITH_PVAPI=ON ../opencv && \
-make && \
+make -j && \
 env OPENCV_TEST_DATA_PATH=../opencv_extra/testdata/ ./bin/opencv_test_core && \
 make install clean
 
@@ -436,7 +436,7 @@ unzip aruco-3.0.13.zip
 
 mkdir build && cd build && \
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTALL_PREFIX=$HOME/.local -DUSE_OWN_EIGEN3=OFF ../aruco-3.0.13
-make
+make -j
 make install
 make clean
 
