@@ -384,7 +384,11 @@ sudo debfoster wpasupplicant
 ```bash
 # http://server.it168.com/a2018/0612/3208/000003208560.shtml
 
-# on ssh server, edit /etc/ssh/sshd_config :
+# aliyun 控制台 :
+# 安全组 -> 配置规则 -> 入方向 -> Port 10022
+
+# on ssh server :
+# /etc/ssh/sshd_config :
 # PubkeyAuthentication            yes
 # PasswordAuthentication          no
 # ChallengeResponseAuthentication no
