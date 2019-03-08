@@ -429,7 +429,8 @@ env OPENCV_TEST_DATA_PATH=../opencv_extra/testdata/ ./bin/opencv_test_core && \
 make install clean
 ```
 
-### ArUco
+### Fiducial Markers
+#### ArUco
 ```bash
 # http://www.uco.es/investiga/grupos/ava/node/25
 # https://sourceforge.net/projects/aruco/
@@ -461,7 +462,7 @@ env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_simple ./P1010976.png -c ./
 # Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
 ```
 
-### MarkerMapper
+#### MarkerMapper
 ```bash
 # http://www.uco.es/investiga/grupos/ava/node/25
 # https://sourceforge.net/projects/markermapper/
