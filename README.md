@@ -431,7 +431,7 @@ make install clean
 
 ### ArUco
 ```bash
-# http://www.uco.es/investiga/grupos/ava/node/26
+# http://www.uco.es/investiga/grupos/ava/node/25
 # https://sourceforge.net/projects/aruco/
 
 sudo debfoster libeigen3-dev
@@ -459,6 +459,22 @@ env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_print_dictionary <pathToSav
 env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_simple ./P1010976.png -c ./calibration/png/LUMIX-LX3.yml -s 0.166
 
 # Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
+```
+
+### MarkerMapper
+```bash
+# http://www.uco.es/investiga/grupos/ava/node/25
+# https://sourceforge.net/projects/markermapper/
+
+mkdir -p <markermapper_dir> && cd <markermapper_dir>
+# Download MarkerMapper from : https://sourceforge.net/projects/markermapper/files/latest/download
+unzip marker_mapper1.0.12.zip
+
+mkdir build && cd build && \
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTALL_PREFIX=$HOME/.local -DUSE_OWN_EIGEN3=OFF ../marker_mapper1.0.12
+make -j
+make install
+make clean
 ```
 
 ### Install Adobe Acrobat Reader in Debian
