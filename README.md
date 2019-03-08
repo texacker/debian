@@ -458,3 +458,23 @@ env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_simple ./P1010976.png -c ./
 
 # Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
 ```
+
+### Install Adobe Acrobat Reader in Debian
+```bash
+​# https://unix.stackexchange.com/questions/3505/how-to-install-adobe-acrobat-reader-in-debian
+
+dpkg --print-architecture
+dpkg --print-foreign-architectures
+sudo dpkg --add-architecture i386
+sudo apt-get update
+
+sudo debfoster libgtk2.0-0:i386
+sudo apt --fix-broken install
+sudo debfoster libxml2:i386
+
+# Alternatively, use gdebi to automatically resolve the dependencies:
+sudo debfoster gdebi
+sudo gdebi xxx
+
+sudo dpkg -i AdbeRdr9.5.5-1_i386linux_enu.deb
+```
