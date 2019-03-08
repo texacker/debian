@@ -401,7 +401,7 @@ sudo debfoster autossh
 su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
 ```
 
-### OpenCV & ArUco
+### OpenCV
 ```bash
 # Prosilica/Aravis GigE API:
 # https://wiki.gnome.org/action/show/Projects/Aravis?action=show&redirect=Aravis
@@ -427,8 +427,10 @@ env PVAPI_ROOT="$HOME/.opt/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TY
 make -j && \
 env OPENCV_TEST_DATA_PATH=../opencv_extra/testdata/ ./bin/opencv_test_core && \
 make install clean
+```
 
-# ArUco:
+### ArUco
+```bash
 # http://www.uco.es/investiga/grupos/ava/node/26
 # https://sourceforge.net/projects/aruco/
 
