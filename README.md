@@ -46,7 +46,8 @@ sudo adduser -gid xxx user
 sudo apt update && sudo apt upgrade
 
 # hostname & FQDN
-sudo hostname <your_hostname>
+# sudo hostname <your_hostname>
+sudo vim /etc/hostname
 sudo vim /etc/hosts
 ```
 
