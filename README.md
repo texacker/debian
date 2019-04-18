@@ -142,19 +142,9 @@ sudo eject /dev/sdX
 
 ```
 
-### SQLite3
-```bash
-sudo debfoster sqlite3 libsqlite3-dev
-```
-
 ### Lightweight Webserver
 ```bash
 sudo debfoster webfs
-```
-
-### Java Environment
-```bash
-sudo debfoster jflex cup eclipse-jdt
 ```
 
 ### Archivers for RAR
@@ -185,43 +175,6 @@ sudo service ssh restart
 
 # add pubkey to authorized_keys :
 ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-```
-
-### PostgreSQL on Debian
-```bash
-sudo debfoster postgresql
-sudo debfoster libpq5 libpq-dev
-sudo debfoster libpqtypes0 libpqtypes-dev
-
-# PostgreSQL Connection Settings:
-#   https://www.postgresql.org/docs/9.1/static/runtime-config-connection.html
-#   * listen_addresses
-#   * port
-#   * max_connections
-
-# PostgreSQL 的用户验证和权限：
-
-# Host-Based Authentication
-#   https://www.postgresql.org/docs/10/static/auth-pg-hba-conf.html
-
-# /etc/postgresql/9.6/main/postgresql.conf:
-listen_addresses = '*'
-
-# /etc/postgresql/9.6/main/pg_hba.conf:
-#   The first record with a matching connection type, client address, requested database, and user name is used to perform authentication.
-#   There is no “fall-through” or “backup”:
-#   if one record is chosen and the authentication fails, subsequent records are not considered.
-#   If no record matches, access is denied.
-#   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为授权被拒绝。
-
-sudo systemctl status postgresql.service
-sudo systemctl restart postgresql.service
-
-# sudo passwd postgres
-# OR:
-# sudo -u postgres psql postgres
-
-psql [-h ip_addr] -U xxx_user -d xxx_db
 ```
 
 ### 截屏
@@ -262,11 +215,6 @@ pdftk in.pdf background back.pdf output out.pdf
 
 # PDF to HTML:
 sudo debfoster pdf2htmlex
-```
-
-### Prolog Programming
-```bash
-sudo debfoster swi-prolog-nox
 ```
 
 ### Video Player
@@ -334,6 +282,58 @@ cd ~/Downloads
 wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
 chmod +x qt-unified-linux-x64-online.run
 ./qt-unified-linux-x64-online.run
+```
+
+### SQLite3
+```bash
+sudo debfoster sqlite3 libsqlite3-dev
+```
+
+### Java Environment
+```bash
+sudo debfoster jflex cup eclipse-jdt
+```
+
+### PostgreSQL on Debian
+```bash
+sudo debfoster postgresql
+sudo debfoster libpq5 libpq-dev
+sudo debfoster libpqtypes0 libpqtypes-dev
+
+# PostgreSQL Connection Settings:
+#   https://www.postgresql.org/docs/9.1/static/runtime-config-connection.html
+#   * listen_addresses
+#   * port
+#   * max_connections
+
+# PostgreSQL 的用户验证和权限：
+
+# Host-Based Authentication
+#   https://www.postgresql.org/docs/10/static/auth-pg-hba-conf.html
+
+# /etc/postgresql/9.6/main/postgresql.conf:
+listen_addresses = '*'
+
+# /etc/postgresql/9.6/main/pg_hba.conf:
+#   The first record with a matching connection type, client address, requested database, and user name is used to perform authentication.
+#   There is no “fall-through” or “backup”:
+#   if one record is chosen and the authentication fails, subsequent records are not considered.
+#   If no record matches, access is denied.
+#   即：匹配上一条 [Connection Type] [Database] [User] 记录之后，如果验证通过则授权，否则则为授权被拒绝。
+
+sudo systemctl status postgresql.service
+sudo systemctl restart postgresql.service
+
+# sudo passwd postgres
+# OR:
+# sudo -u postgres psql postgres
+
+psql [-h ip_addr] -U xxx_user -d xxx_db
+```
+
+### Prolog Programming
+```bash
+sudo debfoster swi-prolog-nox
 ```
 
 ## 嵌入式系统开发
