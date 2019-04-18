@@ -65,6 +65,15 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 #    1.  https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
 ```
 
+### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
+```bash
+# https://wiki.debian.org/iwlwifi
+# https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
+
+sudo debfoster firmware-iwlwifi
+sudo debfoster wpasupplicant
+```
+
 ## 桌面环境
 ### xorg
 ```bash
@@ -73,6 +82,16 @@ sudo debfoster openbox tint2
 sudo debfoster obconf obmenu lxappearance gcolor2
 sudo debfoster ibus-libpinyin
 sudo debfoster geany xfe mupdf firefox-esr
+```
+
+### Enable/disable synaptics touchpad in Debian 9
+```bash
+# https://unix.stackexchange.com/questions/388963/how-can-i-enable-disable-the-synaptics-touchpad-in-debian-9-with-libinput
+sudo debfoster xinput
+
+xinput list
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0     # Disable
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
 ```
 
 ### Qt Creator
@@ -274,6 +293,39 @@ sudo debfoster pdf2htmlex
 sudo debfoster swi-prolog-nox
 ```
 
+### Video Player
+```bash
+sudo debfoster dragonplayer
+dragon [URL] &
+```
+
+### Screen Recorder
+```bash
+sudo debfoster simplescreenrecorder
+simplescreenrecorder &
+```
+
+### Linux on aliyun VPS
+```bash
+# http://server.it168.com/a2018/0612/3208/000003208560.shtml
+
+# aliyun 控制台 :
+# 安全组 -> 配置规则 -> 入方向 -> Port 10022
+
+# on ssh server :
+# /etc/ssh/sshd_config :
+# PubkeyAuthentication            yes
+# PasswordAuthentication          no
+# ChallengeResponseAuthentication no
+# GatewayPorts                    clientspecified
+
+# on ssh client :
+sudo debfoster autossh
+
+# /etc/rc.local
+su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
+```
+
 ## 嵌入式系统开发
 ### 串口
 ```bash
@@ -348,58 +400,6 @@ make check
 make install
 make clean
 make distclean
-```
-
-### Video Player
-```bash
-sudo debfoster dragonplayer
-dragon [URL] &
-```
-
-### Enable/disable synaptics touchpad in Debian 9
-```bash
-# https://unix.stackexchange.com/questions/388963/how-can-i-enable-disable-the-synaptics-touchpad-in-debian-9-with-libinput
-sudo debfoster xinput
-
-xinput list
-xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0     # Disable
-xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
-```
-
-### Screen Recorder
-```bash
-sudo debfoster simplescreenrecorder
-simplescreenrecorder &
-```
-
-### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
-```bash
-# https://wiki.debian.org/iwlwifi
-# https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
-
-sudo debfoster firmware-iwlwifi
-sudo debfoster wpasupplicant
-```
-
-### Linux on aliyun VPS
-```bash
-# http://server.it168.com/a2018/0612/3208/000003208560.shtml
-
-# aliyun 控制台 :
-# 安全组 -> 配置规则 -> 入方向 -> Port 10022
-
-# on ssh server :
-# /etc/ssh/sshd_config :
-# PubkeyAuthentication            yes
-# PasswordAuthentication          no
-# ChallengeResponseAuthentication no
-# GatewayPorts                    clientspecified
-
-# on ssh client :
-sudo debfoster autossh
-
-# /etc/rc.local
-su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
 ```
 
 ### OpenCV
