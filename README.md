@@ -499,3 +499,14 @@ make -j
 make install
 make clean
 ```
+
+### ROS
+```bash
+# http://wiki.ros.org/melodic/Installation/Debian
+```
+
+### PCL
+```bash
+# http://www.pointclouds.org/documentation/
+sudo debfoster dirmngr libpcl-dev pcl-tools
+```
