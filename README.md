@@ -237,6 +237,7 @@ sudo debfoster scrot
 # Or, run: ~/bin/my_scrot.sh [times]
 ```
 
+## 嵌入式系统开发
 ### 串口
 ```bash
 sudo debfoster microcom
