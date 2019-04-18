@@ -94,20 +94,7 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0     # Disable
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
 ```
 
-### Qt Creator
-```bash
-# See http://wiki.qt.io/Install_Qt_5_on_Ubuntu
-sudo debfoster build-essential
-sudo debfoster mesa-common-dev libgl1-mesa-dev
-sudo debfoster gdb clang cmake git
-
-cd ~/Downloads
-wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
-chmod +x qt-unified-linux-x64-online.run
-./qt-unified-linux-x64-online.run
-```
-
-## 常用工具
+## 实用工具
 ### X Screen Locker
 ```bash
 sudo debfoster xtrlock
@@ -333,6 +320,20 @@ sudo debfoster gdebi
 sudo gdebi xxx
 
 sudo dpkg -i AdbeRdr9.5.5-1_i386linux_enu.deb
+```
+
+## 开发工具
+### Qt Creator
+```bash
+# See http://wiki.qt.io/Install_Qt_5_on_Ubuntu
+sudo debfoster build-essential
+sudo debfoster mesa-common-dev libgl1-mesa-dev
+sudo debfoster gdb clang cmake git
+
+cd ~/Downloads
+wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
+chmod +x qt-unified-linux-x64-online.run
+./qt-unified-linux-x64-online.run
 ```
 
 ## 嵌入式系统开发
