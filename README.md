@@ -46,6 +46,15 @@ sudo adduser -gid xxx user
 sudo apt update && sudo apt upgrade
 ```
 
+### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
+```bash
+# https://wiki.debian.org/iwlwifi
+# https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
+
+sudo debfoster firmware-iwlwifi
+sudo debfoster wpasupplicant
+```
+
 ### Install Debian 9 on Dell Precision T7810
 ```bash
 # 0. Setup BIOS:
@@ -63,15 +72,6 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 
 # A. References
 #    1.  https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
-```
-
-### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
-```bash
-# https://wiki.debian.org/iwlwifi
-# https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
-
-sudo debfoster firmware-iwlwifi
-sudo debfoster wpasupplicant
 ```
 
 ## 桌面环境
