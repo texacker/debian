@@ -237,6 +237,43 @@ sudo debfoster scrot
 # Or, run: ~/bin/my_scrot.sh [times]
 ```
 
+### Formatter & Highlighter
+```bash
+# See: file:///usr/share/doc/astyle/html/astyle.html
+sudo debfoster astyle
+astyle --style=bsd -s4 [ -r ] [ --dry-run | -n ] "./*.cpp"
+
+# code to HTML
+sudo debfoster source-highlight
+source-highlight --data-dir ~/.source-highlight -d --tab=4 -i input_file -o output_file
+sed -i -e 's/<body bgcolor="[^"]*">/<body bgcolor="#D4D0C8">/' -e 's/charset=iso-8859-1/charset=utf-8/' output_file
+
+# XML Reformatter
+sudo debfoster xmlindent xmlformat-perl
+```
+
+### Generate Prime Numbers
+```bash
+sudo debfoster primesieve
+primesieve [START] STOP -p
+```
+
+### Document Preparing
+```bash
+sudo debfoster texlive-full pdftk
+
+# Applies a PDF watermark to the background of a single input PDF:
+pdftk in.pdf background back.pdf output out.pdf
+
+# PDF to HTML:
+sudo debfoster pdf2htmlex
+```
+
+### Prolog Programming
+```bash
+sudo debfoster swi-prolog-nox
+```
+
 ## 嵌入式系统开发
 ### 串口
 ```bash
@@ -279,43 +316,6 @@ sudo debfoster openscenegraph-3.4 libopenscenegraph-3.4-dev openscenegraph-3.4-d
 
 # OGRE:
 sudo debfoster libogre-1.9-dev ogre-1.9-tools blender-ogrexml-1.9 libois-dev
-```
-
-### Formatter & Highlighter
-```bash
-# See: file:///usr/share/doc/astyle/html/astyle.html
-sudo debfoster astyle
-astyle --style=bsd -s4 [ -r ] [ --dry-run | -n ] "./*.cpp"
-
-# code to HTML
-sudo debfoster source-highlight
-source-highlight --data-dir ~/.source-highlight -d --tab=4 -i input_file -o output_file
-sed -i -e 's/<body bgcolor="[^"]*">/<body bgcolor="#D4D0C8">/' -e 's/charset=iso-8859-1/charset=utf-8/' output_file
-
-# XML Reformatter
-sudo debfoster xmlindent xmlformat-perl
-```
-
-### Generate Prime Numbers
-```bash
-sudo debfoster primesieve
-primesieve [START] STOP -p
-```
-
-### Document Preparing
-```bash
-sudo debfoster texlive-full pdftk
-
-# Applies a PDF watermark to the background of a single input PDF:
-pdftk in.pdf background back.pdf output out.pdf
-
-# PDF to HTML:
-sudo debfoster pdf2htmlex
-```
-
-### Prolog Programming
-```bash
-sudo debfoster swi-prolog-nox
 ```
 
 ### debian 下交叉编译 ZeroMQ for ARM (i.MX6UL)
