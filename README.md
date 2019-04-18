@@ -44,6 +44,10 @@ sudo adduser -gid xxx user
 
 # update & upgrade
 sudo apt update && sudo apt upgrade
+
+# hostname & FQDN
+sudo hostname <your_hostname>
+sudo vim /etc/hosts
 ```
 
 ### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
