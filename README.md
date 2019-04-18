@@ -94,7 +94,6 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0     # Disable
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
 ```
 
-## 实用工具
 ### X Screen Locker
 ```bash
 sudo debfoster xtrlock
@@ -118,6 +117,7 @@ sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-lib
 ssh srv_host tar -C ~ -zcvf - .config .gitconfig .gtkrc-2.0 .gtkrc-2.0.mine .local .mozilla .xinitrc .Xresources.d .Xresources | ( cd ~ ; tar -zxvf - )
 ```
 
+## 实用工具
 ### ntfs
 ```bash
 sudo debfoster ntfs-3g
