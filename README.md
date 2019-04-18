@@ -107,17 +107,6 @@ chmod +x qt-unified-linux-x64-online.run
 ./qt-unified-linux-x64-online.run
 ```
 
-### CAN Utilities
-```bash
-sudo debfoster build-essential
-sudo debfoster libusb-1.0-0
-sudo debfoster libeigen3-dev
-
-# SocketCAN
-sudo debfoster libsocketcan-dev
-sudo debfoster can-utils
-```
-
 ## 常用工具
 ### X Screen Locker
 ```bash
@@ -327,6 +316,17 @@ su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "Strict
 ```
 
 ## 嵌入式系统开发
+### CAN Utilities
+```bash
+sudo debfoster build-essential
+sudo debfoster libusb-1.0-0
+sudo debfoster libeigen3-dev
+
+# SocketCAN
+sudo debfoster libsocketcan-dev
+sudo debfoster can-utils
+```
+
 ### 串口
 ```bash
 sudo debfoster microcom
