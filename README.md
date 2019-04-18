@@ -99,7 +99,7 @@ sudo debfoster libsocketcan-dev
 sudo debfoster can-utils
 ```
 
-## Others
+## 常用工具
 ### X Screen Locker
 ```bash
 sudo debfoster xtrlock
