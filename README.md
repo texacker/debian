@@ -315,6 +315,26 @@ sudo debfoster autossh
 su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
 ```
 
+### Install Adobe Acrobat Reader in Debian
+```bash
+​# https://unix.stackexchange.com/questions/3505/how-to-install-adobe-acrobat-reader-in-debian
+
+dpkg --print-architecture
+dpkg --print-foreign-architectures
+sudo dpkg --add-architecture i386
+sudo apt-get update
+
+sudo debfoster libgtk2.0-0:i386
+sudo apt --fix-broken install
+sudo debfoster libxml2:i386
+
+# Alternatively, use gdebi to automatically resolve the dependencies:
+sudo debfoster gdebi
+sudo gdebi xxx
+
+sudo dpkg -i AdbeRdr9.5.5-1_i386linux_enu.deb
+```
+
 ## 嵌入式系统开发
 ### CAN Utilities
 ```bash
@@ -477,24 +497,4 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTAL
 make -j
 make install
 make clean
-```
-
-### Install Adobe Acrobat Reader in Debian
-```bash
-​# https://unix.stackexchange.com/questions/3505/how-to-install-adobe-acrobat-reader-in-debian
-
-dpkg --print-architecture
-dpkg --print-foreign-architectures
-sudo dpkg --add-architecture i386
-sudo apt-get update
-
-sudo debfoster libgtk2.0-0:i386
-sudo apt --fix-broken install
-sudo debfoster libxml2:i386
-
-# Alternatively, use gdebi to automatically resolve the dependencies:
-sudo debfoster gdebi
-sudo gdebi xxx
-
-sudo dpkg -i AdbeRdr9.5.5-1_i386linux_enu.deb
 ```
