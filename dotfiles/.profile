@@ -21,6 +21,13 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# .profile 与 .bashrc 的关系：
+#   https://blog.csdn.net/m0_37739193/article/details/72638074
+#   https://www.helplib.com/ubuntu/article_161754
+#
+# .profile : login script
+# .bashrc  : interactive script，即只包含与**交互**有关部分（例如提示符、颜色、别名缩写等等）的脚本
+
 if [ -d "$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin" ] ; then
     PATH="$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH"
 fi
