@@ -137,6 +137,27 @@ sudo service ssh restart
 ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
+### Linux on aliyun VPS
+```bash
+# http://server.it168.com/a2018/0612/3208/000003208560.shtml
+
+# aliyun 控制台 :
+# 安全组 -> 配置规则 -> 入方向 -> Port 10022
+
+# on ssh server :
+# /etc/ssh/sshd_config :
+# PubkeyAuthentication            yes
+# PasswordAuthentication          no
+# ChallengeResponseAuthentication no
+# GatewayPorts                    clientspecified
+
+# on ssh client :
+sudo debfoster autossh
+
+# /etc/rc.local
+su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
+```
+
 ## 实用工具
 ### ntfs
 ```bash
@@ -227,27 +248,6 @@ dragon [URL] &
 ```bash
 sudo debfoster simplescreenrecorder
 simplescreenrecorder &
-```
-
-### Linux on aliyun VPS
-```bash
-# http://server.it168.com/a2018/0612/3208/000003208560.shtml
-
-# aliyun 控制台 :
-# 安全组 -> 配置规则 -> 入方向 -> Port 10022
-
-# on ssh server :
-# /etc/ssh/sshd_config :
-# PubkeyAuthentication            yes
-# PasswordAuthentication          no
-# ChallengeResponseAuthentication no
-# GatewayPorts                    clientspecified
-
-# on ssh client :
-sudo debfoster autossh
-
-# /etc/rc.local
-su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "StrictHostKeyChecking=false" -o "PasswordAuthentication=no" -o "ServerAliveInterval 60" -o "ServerAliveCountMax 3" -R 0.0.0.0:10022:localhost:22 autossh@ecs_vps'
 ```
 
 ### Install Adobe Acrobat Reader in Debian
