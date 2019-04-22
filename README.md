@@ -56,6 +56,7 @@ sudo vim /etc/hosts
 # https://wiki.debian.org/iwlwifi
 # https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
 
+# Add a "non-free" component to /etc/apt/sources.list
 sudo debfoster firmware-iwlwifi
 sudo debfoster wpasupplicant
 ```
