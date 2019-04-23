@@ -528,8 +528,8 @@ sudo debfoster python-rosinstall python-rosinstall-generator python-wstool build
 sudo rosdep init
 rosdep update
 
-source /opt/ros/melodic/setup.bash && \
-mkdir -p <your_catkin_ws>/src && \
+source /opt/ros/melodic/setup.bash
+mkdir -p <your_catkin_ws>/src
 cw && ( cd ./src && catkin_init_workspace ) && catkin_make && source ./devel/setup.bash
 ```
 
