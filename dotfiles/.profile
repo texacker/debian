@@ -34,7 +34,7 @@ fi
 
 # Set ROS Melodic
 source /opt/ros/melodic/setup.bash
-source ~/workspace/zxy/catkin_ws/devel/setup.bash
+source ~/workspace/ros/catkin_ws/devel/setup.bash
 
 # Set ROS Network
 export ROS_MASTER_URI=http://$(hostname):11311
