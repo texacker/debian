@@ -288,6 +288,9 @@ cd ~/Downloads
 wget http://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
 chmod +x qt-unified-linux-x64-online.run
 ./qt-unified-linux-x64-online.run
+
+# or through apt:
+sudo debfoster qt5-default qtcreator
 ```
 
 ### SQLite3
