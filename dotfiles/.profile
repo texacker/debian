@@ -31,3 +31,11 @@ fi
 if [ -d "$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin" ] ; then
     PATH="$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH"
 fi
+
+# Set ROS Melodic
+source /opt/ros/melodic/setup.bash
+source ~/workspace/zxy/catkin_ws/devel/setup.bash
+
+# Set ROS Network
+export ROS_MASTER_URI=http://$(hostname):11311
+export ROS_HOSTNAME=$(hostname)
