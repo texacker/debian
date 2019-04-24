@@ -475,7 +475,7 @@ unzip aruco-3.0.13.zip
 mkdir build && cd build && \
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTALL_PREFIX=$HOME/.local -DUSE_OWN_EIGEN3=OFF ../aruco-3.0.13
 make -j
-make install    # or `make uninstall` if don't want it any more
+make install
 make clean
 
 # Calibrate Camera :
@@ -491,6 +491,9 @@ env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_print_dictionary <pathToSav
 env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_simple ./P1010976.png -c ./calibration/png/LUMIX-LX3.yml -s 0.166
 
 # Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
+
+# if don't want it any more:
+# make uninstall
 ```
 
 #### MarkerMapper
