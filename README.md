@@ -290,7 +290,7 @@ chmod +x qt-unified-linux-x64-online.run
 ./qt-unified-linux-x64-online.run
 
 # or through apt:
-sudo debfoster qt5-default qtcreator
+sudo debfoster qt5-default libqt5serialport5-dev qtcreator
 ```
 
 ### SQLite3
