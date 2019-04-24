@@ -475,7 +475,7 @@ unzip aruco-3.0.13.zip
 mkdir build && cd build && \
 cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTALL_PREFIX=$HOME/.local -DUSE_OWN_EIGEN3=OFF ../aruco-3.0.13
 make -j
-make install
+make install    # or `make uninstall` if don't want it any more
 make clean
 
 # Calibrate Camera :
