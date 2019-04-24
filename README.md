@@ -551,8 +551,7 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local -DWITH_exam
 make
 make demos
 make examples
-make install
-make clean
+make install clean
 
 # or through apt:
 sudo debfoster libcgal-dev libcgal-demo libcgal-qt5-dev libcgal-ipelets
