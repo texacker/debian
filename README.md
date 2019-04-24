@@ -541,3 +541,19 @@ cw && ( cd ./src && catkin_init_workspace ) && catkin_make && source ./devel/set
 # http://www.pointclouds.org/documentation/
 sudo debfoster dirmngr libpcl-dev pcl-tools
 ```
+
+### CGAL
+```bash
+# https://www.cgal.org/download/linux.html
+sudo debfoster libmpfi-dev libmetis-dev libntl-dev libqt5svg5 ipe
+
+cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=$HOME/.local -DWITH_examples=true -DWITH_demos=true ../CGAL-4.14
+make
+make demos
+make examples
+make install
+make clean
+
+# or through apt:
+sudo debfoster libcgal-dev libcgal-demo libcgal-qt5-dev libcgal-ipelets
+```
