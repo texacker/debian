@@ -290,6 +290,7 @@ chmod +x qt-unified-linux-x64-online.run
 ./qt-unified-linux-x64-online.run
 
 # or through apt:
+# https://stackoverflow.com/questions/48147356/install-qt-on-ubuntu
 sudo debfoster qt5-default libqt5serialport5-dev qtcreator
 ```
 
