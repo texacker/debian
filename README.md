@@ -256,6 +256,11 @@ sudo debfoster simplescreenrecorder
 simplescreenrecorder &
 ```
 
+### Office Productivity Suite
+```bash
+sudo debfoster libreoffice
+```
+
 ### Install Adobe Acrobat Reader in Debian
 ```bash
 ​# https://unix.stackexchange.com/questions/3505/how-to-install-adobe-acrobat-reader-in-debian
