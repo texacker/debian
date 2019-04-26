@@ -51,6 +51,26 @@ sudo vim /etc/hostname
 sudo vim /etc/hosts
 ```
 
+### Pubkey Authentication
+```bash
+# run ssh-keygen on remote_host :
+ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
+
+# on ssh server, edit /etc/ssh/sshd_config :
+# PubkeyAuthentication            yes
+# AuthorizedKeysFile              .ssh/authorized_keys .ssh/authorized_keys2
+# PasswordAuthentication          no
+# ChallengeResponseAuthentication no
+
+# and restart sshd :
+sudo systemctl restart sshd.service
+# or
+sudo service ssh restart
+
+# add pubkey to authorized_keys :
+ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+```
+
 ### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
 ```bash
 # https://wiki.debian.org/iwlwifi
@@ -121,26 +141,6 @@ sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-lib
 # ~/.Xresources.d
 # ~/.Xresources
 ssh srv_host tar -C ~ -zcvf - .config .gitconfig .gtkrc-2.0 .gtkrc-2.0.mine .local .mozilla .xinitrc .Xresources.d .Xresources | ( cd ~ ; tar -zxvf - )
-```
-
-### Pubkey Authentication
-```bash
-# run ssh-keygen on remote_host :
-ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
-
-# on ssh server, edit /etc/ssh/sshd_config :
-# PubkeyAuthentication            yes
-# AuthorizedKeysFile              .ssh/authorized_keys .ssh/authorized_keys2
-# PasswordAuthentication          no
-# ChallengeResponseAuthentication no
-
-# and restart sshd :
-sudo systemctl restart sshd.service
-# or
-sudo service ssh restart
-
-# add pubkey to authorized_keys :
-ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ```
 
 ### Linux on aliyun VPS
