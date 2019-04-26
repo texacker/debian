@@ -18,13 +18,13 @@ debfoster -q
 debfoster sudo vim tmux rsync
 
 # Basic Configurations:
+# ~/.profile
+# ~/.bashrc
 # ~/.bash_aliases
 # ~/.inputrc
-# ~/.bashrc
-# ~/.tmux.conf
 # ~/.vimrc
+# ~/.tmux.conf
 # ~/.screenrc
-
 ```
 
 ### System Tools
