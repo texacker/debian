@@ -84,7 +84,7 @@ sudo debfoster wpasupplicant
 
 ### Immigrate Debian
 ```bash
-rsync -avzP --delete -e ssh --exclude=.ssh --exclude=.local/bin --exclude=.local/include --exclude=.local/lib --exclude=.local/share src_path dest_path
+rsync -avzP --delete -e ssh --exclude=/.ssh/ --exclude=/.local/bin/ --exclude=/.local/include/ --exclude=/.local/lib/ --exclude=/.local/share/ src_path dest_path
 ```
 
 ### Install Debian 9 on Dell Precision T7810
