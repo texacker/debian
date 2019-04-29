@@ -82,6 +82,11 @@ sudo debfoster firmware-iwlwifi
 sudo debfoster wpasupplicant
 ```
 
+### Immigrate Debian
+```bash
+rsync -avzP --delete -e ssh --exclude=.ssh --exclude=.local/bin --exclude=.local/include --exclude=.local/lib --exclude=.local/share src_path dest_path
+```
+
 ### Install Debian 9 on Dell Precision T7810
 ```bash
 # 0. Setup BIOS:
@@ -125,23 +130,6 @@ xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
 ```bash
 sudo debfoster xtrlock
 xtrlock -f && top
-```
-
-### Immigrate Debian
-```bash
-sudo debfoster xorg fontconfig openbox tint2 obconf obmenu lxappearance ibus-libpinyin geany xfe mupdf firefox-esr
-
-# Restore files/dirs :
-# ~/.config
-# ~/.gitconfig
-# ~/.gtkrc-2.0
-# ~/.gtkrc-2.0.mine
-# ~/.local/share
-# ~/.mozilla
-# ~/.xinitrc
-# ~/.Xresources.d
-# ~/.Xresources
-ssh srv_host tar -C ~ -zcvf - .config .gitconfig .gtkrc-2.0 .gtkrc-2.0.mine .local .mozilla .xinitrc .Xresources.d .Xresources | ( cd ~ ; tar -zxvf - )
 ```
 
 ### Linux on aliyun VPS
