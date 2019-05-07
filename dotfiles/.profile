@@ -32,6 +32,10 @@ if [ -d "$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin" ]
     PATH="$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH"
 fi
 
+if [ -d "$HOME/.local/lib/pkgconfig" ] ; then
+    PKG_CONFIG_PATH="$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
+fi
+
 # Set ROS Melodic
 source /opt/ros/melodic/setup.bash
 source ~/workspace/ros/catkin_ws/devel/setup.bash
