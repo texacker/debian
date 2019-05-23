@@ -37,8 +37,13 @@ if [ -d "$HOME/.local/lib/pkgconfig" ] ; then
 fi
 
 # Set ROS Melodic
-source /opt/ros/melodic/setup.bash
-source ~/workspace/ros/catkin_ws/devel/setup.bash
+if [ -f /opt/ros/melodic/setup.bash ] ; then
+    source /opt/ros/melodic/setup.bash
+fi
+
+if [ -f ~/workspace/ros/catkin_ws/devel/setup.bash ] ; then
+    source ~/workspace/ros/catkin_ws/devel/setup.bash
+fi
 
 # Set ROS Network
 export ROS_MASTER_URI=http://$(hostname):11311
