@@ -540,6 +540,12 @@ rosdep update
 source /opt/ros/melodic/setup.bash
 mkdir -p <your_catkin_ws>/src
 cw && ( cd ./src && catkin_init_workspace ) && catkin_make && source ./devel/setup.bash
+
+# Security issue on ROS build farm :
+# * http://answers.ros.org/question/325039/apt-update-fails-cannot-install-pkgs-key-not-working/
+# * http://wiki.ros.org/melodic/Installation/Ubuntu
+sudo apt-key del 421C365BD9FF1F717815A3895523BAEEB01FA116
+sudo -E apt-key adv --keyserver 'hkp://keyserver.ubuntu.com:80' --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654
 ```
 
 ### PCL
