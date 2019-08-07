@@ -274,6 +274,13 @@ sudo gdebi xxx
 sudo dpkg -i AdbeRdr9.5.5-1_i386linux_enu.deb
 ```
 
+### Hardware Info
+```bash
+​# http://os.51cto.com/art/201908/600787.htm
+
+sudo debfoster lshw lshw-gtk hardinfo sysinfo
+```
+
 ## 开发工具
 ### Qt Creator
 ```bash
