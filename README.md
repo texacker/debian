@@ -281,6 +281,16 @@ sudo dpkg -i AdbeRdr9.5.5-1_i386linux_enu.deb
 sudo debfoster lshw lshw-gtk hardinfo sysinfo
 ```
 
+### Image Viewer
+```bash
+sudo debfoster gpicview lximage-qt qt5-image-formats-plugins
+```
+
+### System Monitor
+```bash
+sudo debfoster htop glances
+```
+
 ## 开发工具
 ### Qt Creator
 ```bash
