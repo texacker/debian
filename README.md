@@ -515,7 +515,7 @@ env LD_LIBRARY_PATH=~/.local/lib/ ~/.local/bin/aruco_simple ./P1010976.png -c ./
 
 # Note: OpenCV4/aruco 与 aruco-3.0.13 版本差异见：opencv2/aruco.hpp
 
-# Note: if don't want it any more:
+# Note: if you don't want it any more:
 # make uninstall
 ```
 
