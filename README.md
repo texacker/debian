@@ -481,6 +481,9 @@ env PVAPI_ROOT="$HOME/.opt/PvAPI_1.28_Linux/AVT_GigE_SDK" cmake -DCMAKE_BUILD_TY
 make -j && \
 env OPENCV_TEST_DATA_PATH=../opencv_extra/testdata/ ./bin/opencv_test_core && \
 make install clean
+
+# Note: if you don't want it any more:
+# make uninstall
 ```
 
 ### Fiducial Markers
@@ -533,6 +536,9 @@ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_PREFIX_PATH=$HOME/.local -DCMAKE_INSTAL
 make -j
 make install
 make clean
+
+# Note: if you don't want it any more:
+# make uninstall
 ```
 
 ### ROS
