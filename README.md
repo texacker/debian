@@ -590,6 +590,9 @@ make install clean
 
 # or through apt:
 sudo debfoster libcgal-dev libcgal-demo libcgal-qt5-dev libcgal-ipelets
+
+# Note: if you don't want it any more:
+# see: cgal.uninstall.log
 ```
 
 ### laser_scan_matcher
