@@ -123,6 +123,8 @@ sudo apt update
 sudo apt update && sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo reboot
+
+# reinstall all packages ...
 ```
 
 ## 桌面环境
