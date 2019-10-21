@@ -109,6 +109,7 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 ### Upgrade Debian 9 to 10
 ```bash
 sudo apt update && sudo apt upgrade -y
+sudo cp /var/lib/debfoster/keepers /var/lib/debfoster/keepers.bak
 sudo debfoster -n
 
 sudo apt update && sudo apt upgrade -y
