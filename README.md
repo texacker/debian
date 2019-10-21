@@ -1,6 +1,6 @@
 # Debian 使用笔记
 
-## 安装 Debian Base
+## 安装、维护与升级
 
 ### [Download media](https://www.debian.org/distrib/netinst) from [mirrors](https://www.debian.org/CD/http-ftp/#mirrors) and [write image to USB](https://www.debian.org/CD/faq/#write-usb)
 ```bash
