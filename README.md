@@ -124,7 +124,7 @@ sudo apt update && sudo apt upgrade -y
 sudo apt dist-upgrade -y
 sudo reboot
 
-# reinstall all packages ...
+# reinstall packages ...
 ```
 
 ## 桌面环境
