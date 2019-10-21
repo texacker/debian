@@ -108,21 +108,20 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 
 ### Upgrade Debian 9 to 10
 ```bash
-# 0. Setup BIOS:
-#    * Boot Mode: UEFI
-#    * Secure Boot: Off
+sudo apt update && sudo apt upgrade -y
+sudo debfoster -n
 
-# 1. Install Debian 9 on Dell Precision T7810
+sudo apt update && sudo apt upgrade -y
+lsb_release -a && cat /etc/*-release
 
-# 2. Re-enter Rescure Mode, and run
-mount -t vfat /dev/sda1 /mnt
-mkdir -p /mnt/EFI/BOOT
-cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
+sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list
+sudo sed -i 's/stretch/buster/g' /etc/apt/sources.list.d/*.list
 
-# 3. Reboot
-
-# A. References
-#    1.  https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
+sudo apt update
+sudo apt update && sudo apt upgrade -y
+sudo apt dist-upgrade -y
+sudo reboot
 ```
 
 ## 桌面环境
