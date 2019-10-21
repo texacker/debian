@@ -106,6 +106,25 @@ cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
 #    1.  https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
 ```
 
+### Upgrade Debian 9 to 10
+```bash
+# 0. Setup BIOS:
+#    * Boot Mode: UEFI
+#    * Secure Boot: Off
+
+# 1. Install Debian 9 on Dell Precision T7810
+
+# 2. Re-enter Rescure Mode, and run
+mount -t vfat /dev/sda1 /mnt
+mkdir -p /mnt/EFI/BOOT
+cp /mnt/EFI/debian/grubx64.efi /mnt/EFI/BOOT/BOOTX64.EFI
+
+# 3. Reboot
+
+# A. References
+#    1.  https://askubuntu.com/questions/657477/installaton-of-ubuntu-14-04-on-dell-precision-t7810-fails-no-boot-device-found
+```
+
 ## 桌面环境
 ### xorg
 ```bash
