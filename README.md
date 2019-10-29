@@ -344,6 +344,9 @@ sudo debfoster jflex cup
 
 # debian 10:
 sudo debfoster openjdk-11-jdk openjdk-11-source openjdk-11-doc
+
+# Download Eclipse Installer from:
+# https://www.eclipse.org/downloads/packages/installer
 ```
 
 ### PostgreSQL on Debian
