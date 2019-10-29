@@ -337,7 +337,13 @@ sudo debfoster sqlite3 libsqlite3-dev
 
 ### Java Environment
 ```bash
-sudo debfoster jflex cup eclipse-jdt
+sudo debfoster jflex cup
+
+# debian 9:
+#sudo debfoster eclipse-jdt
+
+# debian 10:
+sudo debfoster openjdk-11-jdk openjdk-11-source openjdk-11-doc
 ```
 
 ### PostgreSQL on Debian
