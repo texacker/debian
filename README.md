@@ -80,6 +80,9 @@ ssh-copy-id srv_user@srv_host
 # Add a "non-free" component to /etc/apt/sources.list
 sudo debfoster firmware-iwlwifi
 sudo debfoster wpasupplicant
+
+# iPhone Personal Hotspot
+sudo debfoster ipheth-utils iw wireless-tools
 ```
 
 ### Immigrate Debian
