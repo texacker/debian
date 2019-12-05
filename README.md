@@ -72,7 +72,7 @@ sudo service ssh restart
 ssh-copy-id srv_user@srv_host
 ```
 
-### Configure Wi-Fi on Debian 9 with Intel(R) Dual Band Wireless AC 8265
+### Configure Wi-Fi on Debian 9
 ```bash
 # https://wiki.debian.org/WiFi/
 # https://blog.csdn.net/qq_41890503/article/details/89929496
@@ -82,6 +82,7 @@ ssh-copy-id srv_user@srv_host
 sudo debfoster iw wireless-tools
 sudo debfoster wpasupplicant
 
+# Intel(R) Dual Band Wireless AC 8265
 # https://wiki.debian.org/iwlwifi
 # https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
 sudo debfoster firmware-iwlwifi
@@ -90,6 +91,7 @@ sudo /sbin/iw interface_name scan | grep SSID
 wpa_passphrase my_ssid my_very_secret_passphrase
 
 # iPhone Personal Hotspot
+# https://my.oschina.net/u/260165/blog/1595629
 sudo debfoster ipheth-utils
 ```
 
