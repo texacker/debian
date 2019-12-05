@@ -72,7 +72,7 @@ sudo service ssh restart
 ssh-copy-id srv_user@srv_host
 ```
 
-### Configure Wi-Fi on Debian 9
+### Configure Wi-Fi on Debian
 ```bash
 # https://wiki.debian.org/WiFi/
 # https://blog.csdn.net/qq_41890503/article/details/89929496
@@ -87,7 +87,7 @@ sudo debfoster wpasupplicant
 # https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
 sudo debfoster firmware-iwlwifi
 
-sudo /sbin/iw interface_name scan | grep SSID
+sudo iw interface_name scan | grep SSID
 wpa_passphrase my_ssid my_very_secret_passphrase
 
 # iPhone Personal Hotspot
