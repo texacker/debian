@@ -78,13 +78,13 @@ ssh-copy-id srv_user@srv_host
 # https://blog.csdn.net/qq_41890503/article/details/89929496
 # https://blog.csdn.net/tirecoed/article/details/6147250
 
-# Add a "non-free" component to /etc/apt/sources.list
 sudo debfoster iw wireless-tools
 sudo debfoster wpasupplicant
 
 # Intel(R) Dual Band Wireless AC 8265
 # https://wiki.debian.org/iwlwifi
 # https://unix.stackexchange.com/questions/348748/how-to-configure-wi-fi-on-debian-9-stretch-with-network-card-intel-corporation-w
+# add a "non-free" component to /etc/apt/sources.list
 sudo debfoster firmware-iwlwifi
 
 sudo iw interface_name scan | grep SSID
