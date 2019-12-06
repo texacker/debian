@@ -29,7 +29,7 @@ debfoster sudo vim tmux rsync
 
 ### System Tools
 ```bash
-sudo debfoster net-tools locales man-db
+sudo debfoster net-tools locales man-db resolvconf
 ```
 
 ### System-Wide Configuration
@@ -88,11 +88,15 @@ sudo debfoster wpasupplicant
 sudo debfoster firmware-iwlwifi
 
 sudo iw interface_name scan | grep SSID
-wpa_passphrase my_ssid my_very_secret_passphrase
+wpa_passphrase my_ssid my_passphrase
 
 # iPhone Personal Hotspot
 # https://my.oschina.net/u/260165/blog/1595629
 sudo debfoster ipheth-utils
+
+# https://vitux.com/how-to-start-stop-and-restart-services-in-debian-10/
+sudo systemctl restart networking
+sudo systemctl restart resolvconf
 ```
 
 ### Immigrate Debian
