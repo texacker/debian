@@ -21,6 +21,11 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
+
 # .profile 与 .bashrc 的关系：
 #   https://blog.csdn.net/m0_37739193/article/details/72638074
 #   https://www.helplib.com/ubuntu/article_161754
