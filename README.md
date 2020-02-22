@@ -69,7 +69,7 @@ sudo service ssh restart
 
 # add pubkey to authorized_keys :
 # ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
-ssh-copy-id srv_user@srv_host
+ssh-copy-id remote_user@remote_host
 ```
 
 ### Configure Wi-Fi on Debian
