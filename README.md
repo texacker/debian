@@ -56,7 +56,10 @@ sudo vim /etc/hosts
 # run ssh-keygen on remote_host :
 ssh-keygen -t rsa -b 4096 -C "$(whoami)@$(hostname)-$(date -I)"
 
-# on ssh server, edit /etc/ssh/sshd_config :
+# on ssh server, check /etc/ssh/sshd_config :
+grep -E "^#?(PubkeyAuthentication|AuthorizedKeysFile|PasswordAuthentication|ChallengeResponseAuthentication)" /etc/ssh/sshd_config
+
+# then edit :
 # PubkeyAuthentication            yes
 # AuthorizedKeysFile              .ssh/authorized_keys .ssh/authorized_keys2
 # PasswordAuthentication          no
@@ -68,7 +71,7 @@ sudo systemctl restart sshd.service
 sudo service ssh restart
 
 # add pubkey to authorized_keys :
-# ssh remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
+# ssh remote_user@remote_host cat ~/.ssh/id_rsa.pub >> ~/.ssh/authorized_keys
 ssh-copy-id remote_user@remote_host
 ```
 
