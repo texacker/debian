@@ -164,8 +164,16 @@ sudo debfoster gcolor2 gpick
 sudo debfoster xinput
 
 xinput list
+
+# T470p
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0     # Disable
 xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1     # Enable
+
+# TOSHIBA
+xinput set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0
+
+# Dell E5440
+xinput set-prop "AlpsPS/2 ALPS GlidePoint" "Device Enabled" 0
 ```
 
 ### X Screen Locker
