@@ -152,9 +152,10 @@ sudo reboot
 ```bash
 sudo debfoster xorg fontconfig
 sudo debfoster openbox tint2
-sudo debfoster obconf obmenu lxappearance gcolor2
+sudo debfoster obconf obmenu lxappearance
 sudo debfoster ibus-libpinyin
 sudo debfoster geany xfe mupdf firefox-esr
+sudo debfoster gcolor2 gpick
 ```
 
 ### Enable/disable synaptics touchpad in Debian 9
