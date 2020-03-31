@@ -154,7 +154,7 @@ sudo debfoster xorg fontconfig
 sudo debfoster openbox tint2
 sudo debfoster obconf obmenu lxappearance
 sudo debfoster ibus-libpinyin
-sudo debfoster geany xfe mupdf firefox-esr
+sudo debfoster geany xfe mupdf okular firefox-esr
 sudo debfoster gcolor2 gpick
 ```
 
