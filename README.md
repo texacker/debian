@@ -301,7 +301,7 @@ simplescreenrecorder &
 
 ### Office Productivity Suite
 ```bash
-sudo debfoster libreoffice
+sudo debfoster libreoffice inkscape gimp
 ```
 
 ### Install Adobe Acrobat Reader in Debian
