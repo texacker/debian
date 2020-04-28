@@ -285,6 +285,9 @@ pdftk in.pdf background back.pdf output out.pdf
 
 # PDF to HTML:
 sudo debfoster pdf2htmlex
+
+# Other utilities:
+sudo debfoster latexml dvipng mathtex mimetex latex2html bibtex2html
 ```
 
 ### Video Player
