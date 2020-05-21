@@ -432,26 +432,26 @@ sudo debfoster swi-prolog-nox
 
 ### VNC
 ```bash
-#https://www.cnblogs.com/lidabo/p/3972512.html
+# https://www.cnblogs.com/lidabo/p/3972512.html
 
 sudo debfoster tightvncserver xtightvncviewer
 
-#Setting up xtightvncviewer (1:1.3.9-9+deb10u1) ...
-#update-alternatives: using /usr/bin/xtightvncviewer to provide /usr/bin/vncviewer (vncviewer) in auto mode
+# Setting up xtightvncviewer (1:1.3.9-9+deb10u1) ...
+# update-alternatives: using /usr/bin/xtightvncviewer to provide /usr/bin/vncviewer (vncviewer) in auto mode
 
-#Setting up tightvncserver (1:1.3.9-9+deb10u1) ...
-#update-alternatives: using /usr/bin/tightvncserver to provide /usr/bin/vncserver (vncserver) in auto mode
-#update-alternatives: using /usr/bin/Xtightvnc to provide /usr/bin/Xvnc (Xvnc) in auto mode
-#update-alternatives: using /usr/bin/tightvncpasswd to provide /usr/bin/vncpasswd (vncpasswd) in auto mode
+# Setting up tightvncserver (1:1.3.9-9+deb10u1) ...
+# update-alternatives: using /usr/bin/tightvncserver to provide /usr/bin/vncserver (vncserver) in auto mode
+# update-alternatives: using /usr/bin/Xtightvnc to provide /usr/bin/Xvnc (Xvnc) in auto mode
+# update-alternatives: using /usr/bin/tightvncpasswd to provide /usr/bin/vncpasswd (vncpasswd) in auto mode
 
-#Server:
+# On server:
 mv ~/.vnc/xstartup xstartup.sample
 cp ~/.xinitrc ~/.vnc/xstartup
 
 vncserver -depth 24 -geometry 1680x1050
 vncserver -kill :1
 
-#Client:
+# On Client:
 vncviewer &
 ```
 
