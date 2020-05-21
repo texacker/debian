@@ -451,7 +451,7 @@ cp ~/.xinitrc ~/.vnc/xstartup
 vncserver -depth 24 -geometry 1680x1050
 vncserver -kill :1
 
-# On Client:
+# On client:
 vncviewer &
 ```
 
