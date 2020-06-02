@@ -232,8 +232,11 @@ sudo eject /dev/sdX
 
 ```
 
-### Lightweight Webserver
+### Web Server
 ```bash
+sudo debfoster apache2 apache2-doc
+
+# lightweight webserver
 sudo debfoster webfs
 ```
 
