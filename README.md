@@ -699,3 +699,8 @@ mkdir -p <your_csm_path>/build
 # Note: if you don't want it any more:
 # see: csm.uninstall.log
 ```
+
+### JSON Utilities
+```bash
+sudo debfoster jq jshon
+```
