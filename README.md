@@ -271,6 +271,9 @@ sed -i -e 's/<body bgcolor="[^"]*">/<body bgcolor="#D4D0C8">/' -e 's/charset=iso
 
 # XML Reformatter
 sudo debfoster xmlindent xmlformat-perl
+
+# Other syntax checkers and reformatters
+sudo debfoster tidy csstidy perltidy clang-tidy
 ```
 
 ### Generate Prime Numbers
