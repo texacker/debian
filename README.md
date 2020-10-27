@@ -639,7 +639,15 @@ make clean
 # http://wiki.ros.org/melodic/Installation/Debian
 
 sudo debfoster chrony ntpdate
+
+# update system time through ntp client(chrony)
+sudo systemctl status chronyd.service
+chronyc sources
+chronyc sourcestats
+
+# or an one-time update
 sudo ntpdate [ -q ] ntp.ubuntu.com
+sudo ntpdate [ -q ] ntp.tuna.tsinghua.edu.cn
 
 sudo debfoster dirmngr
 sudo debfoster libpcl-dev
