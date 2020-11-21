@@ -715,3 +715,8 @@ mkdir -p <your_csm_path>/build
 ```bash
 sudo debfoster jq jshon
 ```
+
+### Optimization Problems Solver
+```bash
+sudo debfoster libceres1 ceres-solver-doc
+```
