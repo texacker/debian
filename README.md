@@ -666,7 +666,7 @@ sudo debfoster python-rosdep python-rosinstall python-rosinstall-generator pytho
 
 # Generic (pip)
 sudo debfoster python-pip
-sudo pip install -U rosdep rosinstall_generator wstool rosinstall
+sudo pip install -U rosdep rosinstall rosinstall_generator wstool
 
 # 1.2 Initializing rosdep
 
