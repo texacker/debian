@@ -41,15 +41,6 @@ if [ -d "$HOME/.local/lib/pkgconfig" ] ; then
     PKG_CONFIG_PATH="$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
 fi
 
-# Set ROS Melodic
-if [ -f /opt/ros/melodic/setup.bash ] ; then
-    source /opt/ros/melodic/setup.bash
+if [ -f "$HOME/.bash_ros.bash" ]; then
+    . "$HOME/.bash_ros.bash"
 fi
-
-if [ -f ~/workspace/ros/catkin_ws/devel/setup.bash ] ; then
-    source ~/workspace/ros/catkin_ws/devel/setup.bash
-fi
-
-# Set ROS Network
-export ROS_MASTER_URI=http://$(hostname):11311
-export ROS_HOSTNAME=$(hostname)

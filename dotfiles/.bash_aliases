@@ -13,8 +13,3 @@ alias ps='ps axlfww'
 #alias scrot='scrot -e "mv $f ~/.scrot"'
 alias minicom='minicom -c on --capturefile=$HOME/.minicom/minicom.log'
 alias astyle='astyle --style=bsd -s4 -n'
-
-# Set ROS alias command
-alias cw='cd ~/workspace/ros/catkin_ws/'
-alias cs='cd ~/workspace/ros/catkin_ws/src'
-alias cm='( cd ~/workspace/ros/catkin_ws/ && catkin_make )'
