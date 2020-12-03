@@ -1,1 +1,1 @@
-forward-socks5 / localhost:port .
+forward-socks5 / host:port .
