@@ -636,8 +636,8 @@ make clean
 
 ### ROS
 ```bash
-# http://wiki.ros.org/melodic/Installation/Debian
-# http://wiki.ros.org/melodic/Installation/Source
+# http://wiki.ros.org/noetic/Installation/Debian
+# http://wiki.ros.org/noetic/Installation/Source
 
 sudo debfoster chrony ntpdate
 
@@ -673,8 +673,8 @@ sudo [ env https_proxy=http://host:port ] rosdep init
 [ env https_proxy=http://host:port ] rosdep update
 
 # 2. Installation
-sudo debfoster ros-melodic-desktop-full
-source /opt/ros/melodic/setup.bash
+sudo debfoster ros-noetic-desktop-full
+source /opt/ros/noetic/setup.bash
 
 mkdir -p <your_catkin_ws>/src
 cw && ( cd ./src && catkin_init_workspace ) && catkin_make && source ./devel/setup.bash
