@@ -247,7 +247,7 @@ sudo debfoster unrar-free unar
 
 ### Utilities for GFW :-/
 ```bash
-sudo debfoster shadowsocks-libev supervisor proxychains
+sudo debfoster supervisor shadowsocks-libev proxychains privoxy
 ```
 
 ### 截屏
