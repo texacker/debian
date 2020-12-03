@@ -669,9 +669,8 @@ sudo debfoster python-pip
 sudo pip install -U rosdep rosinstall rosinstall_generator wstool
 
 # 1.2 Initializing rosdep
-
-sudo rosdep init
-rosdep update
+sudo [ env https_proxy=http://localhost:xxxx ] rosdep init
+[ env https_proxy=http://localhost:xxxx ] rosdep update
 
 # 2. Installation
 sudo debfoster ros-melodic-desktop-full
