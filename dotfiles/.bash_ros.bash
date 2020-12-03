@@ -1,7 +1,7 @@
 #!/usr/bin/bash
 
 # catkin Workspace
-export CATKIN_WS_PATH="$HOME/workspace/zxy/src/catkin_ws"
+export CATKIN_WS_PATH="$HOME/<your_catkin_ws>"
 
 # Set ROS alias command
 alias cw='cd $CATKIN_WS_PATH'
