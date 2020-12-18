@@ -12,7 +12,7 @@
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
     if [ -f "$HOME/.bashrc" ]; then
-    . "$HOME/.bashrc"
+        . "$HOME/.bashrc"
     fi
 fi
 
@@ -33,14 +33,11 @@ fi
 # .profile : login script
 # .bashrc  : interactive script，即只包含与**交互**有关部分（例如提示符、颜色、别名缩写等等）的脚本
 
-if [ -d "$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin" ] ; then
-    PATH="$HOME/.local/gcc-linaro-4.9.4-2017.01-x86_64_arm-linux-gnueabihf/bin:$PATH"
+if [ -f "$HOME/.bash_local_env.bash" ]; then
+    . "$HOME/.bash_local_env.bash"
 fi
 
-if [ -d "$HOME/.local/lib/pkgconfig" ] ; then
-    PKG_CONFIG_PATH="$HOME/.local/lib/pkgconfig:$PKG_CONFIG_PATH"
+if [ -f "$HOME/.bash_local_ros.bash" ]; then
+    . "$HOME/.bash_local_ros.bash"
 fi
 
-if [ -f "$HOME/.bash_ros.bash" ]; then
-    . "$HOME/.bash_ros.bash"
-fi
