@@ -463,6 +463,6 @@ vncviewer &
 
 ### JSON Libraries and Utilities
 ```bash
-sudo debfoster libfastjson-dev libjson-c-dev nlohmann-json3-dev
+sudo debfoster libfastjson-dev libjson-c-dev libjsoncpp-dev nlohmann-json3-dev
 sudo debfoster jq jshon
 ```
