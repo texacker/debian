@@ -461,7 +461,8 @@ vncserver -kill :1
 vncviewer &
 ```
 
-### JSON Utilities
+### JSON Libraries and Utilities
 ```bash
+sudo debfoster libfastjson-dev libjson-c-dev nlohmann-json3-dev
 sudo debfoster jq jshon
 ```
