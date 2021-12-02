@@ -147,6 +147,34 @@ sudo reboot
 # reinstall packages ...
 ```
 
+### Sound System
+```bash
+# https://blog.csdn.net/pingis58/article/details/120150700
+
+# Lower Level
+sudo debfoster alsa-utils
+alsactl init
+
+# list devices
+aplay -L
+aplay -l
+
+# test
+speaker-test -D default -c 2
+speaker-test -D hw:1,0 -c 2
+speaker-test -D hw:0,7 -c 2
+
+# Higher Level
+sudo debfoster pulseaudio
+pacmd list sinks
+pacmd set-default-sink 0
+
+# Adjust Volume
+alsamixer
+# or
+pacmd set-sink-volume NAME|#N VOLUME
+```
+
 ## 桌面环境
 ### xorg
 ```bash
