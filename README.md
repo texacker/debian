@@ -175,7 +175,7 @@ amixer -q set Master 10%+
 amixer -q set Master 10%+ unmute
 amixer -q set Master 10%-
 amixer -q set Master 10%- mute
-amixer -q set Master 0%+ toggle
+amixer -q set Master 0% toggle
 # or
 pacmd set-sink-volume NAME|#N VOLUME
 ```
