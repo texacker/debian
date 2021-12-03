@@ -273,6 +273,10 @@
         <action name="ToggleDecorations"/>
       </keybind>
     </keybind>
+    <keybind key="C-W-f">
+      <action name="ToggleMaximizeFull"/>
+      <action name="ToggleDecorations"/>
+    </keybind>
     <keybind key="C-W-Prior">
       <action name="Execute">
         <command>amixer -q set Master 10%+</command>
@@ -285,7 +289,7 @@
     </keybind>
     <keybind key="C-W-m">
       <action name="Execute">
-        <command>amixer -q set Master 0%+ toggle</command>
+        <command>amixer -q set Master 0% unmute</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
