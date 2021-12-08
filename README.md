@@ -150,6 +150,10 @@ sudo reboot
 ### Sound System
 ```bash
 # https://blog.csdn.net/pingis58/article/details/120150700
+#
+# https://unix.stackexchange.com/questions/356413/volume-icon-for-pulseaudio-on-tint2-nothing-works :
+#   volumeicon-alsa
+#   pnmixer
 
 # Lower Level
 sudo debfoster alsa-utils
