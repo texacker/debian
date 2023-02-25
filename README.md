@@ -17,7 +17,7 @@ apt install debfoster
 # create an initial debfoster database(/var/lib/debfoster/keepers)
 debfoster -q
 
-# don't read the debfoster database and start with an empty list
+# or don't read the debfoster database and start with an empty list
 debfoster -n
 
 debfoster sudo vim tmux rsync
