@@ -13,7 +13,12 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/da0 bs=4M; sync
 ### Packages Management
 ```bash
 apt install debfoster
+
+# create an initial debfoster database(/var/lib/debfoster/keepers)
 debfoster -q
+
+# don't read the debfoster database and start with an empty list
+debfoster -n
 
 debfoster sudo vim tmux rsync
 
