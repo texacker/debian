@@ -266,8 +266,10 @@ sudo umount /mnt
 
 ### Using USB flash drive
 ```bash
-sudo debfoster dosfstools
+# List the partition tables
 sudo fdisk -l
+
+sudo debfoster dosfstools
 sudo dd if=/dev/zero of=/dev/sdX bs=4k && sync
 sudo fdisk /dev/sdX
 # 1. Using command 'o' to create a new empty DOS partition table.
@@ -275,6 +277,7 @@ sudo fdisk /dev/sdX
 # 3. Using command 'w' to write table to disk and exit.
 sudo mkdosfs -F 32 -I /dev/sdX1
 sudo eject /dev/sdX
+
 # References
 #   1. https://askubuntu.com/questions/22381/how-to-format-a-usb-flash-drive
 #   2. https://www.garron.me/en/go2linux/format-usb-drive-fat32-file-system-ubuntu-linux.html
