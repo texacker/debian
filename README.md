@@ -257,6 +257,13 @@ sudo mount -t ntfs-3g /dev/sdc1 /mnt
 sudo umount /mnt
 ```
 
+### exFAT
+```bash
+sudo debfoster exfat-fuse
+sudo mount /dev/sdb1 /mnt
+sudo umount /mnt
+```
+
 ### Using USB flash drive
 ```bash
 sudo debfoster dosfstools
