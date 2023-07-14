@@ -250,7 +250,7 @@ su autossh -c '/usr/bin/autossh -M 0 -N -o "PubkeyAuthentication=yes" -o "Strict
 ```
 
 ## 实用工具
-### ntfs
+### NTFS
 ```bash
 sudo debfoster ntfs-3g
 sudo mount -t ntfs-3g /dev/sdc1 /mnt
