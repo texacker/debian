@@ -2,7 +2,7 @@
 
 ## 安装、维护与升级
 
-### [Download media](https://www.debian.org/distrib/netinst) from [mirrors](https://www.debian.org/CD/http-ftp/#mirrors) and [write image to USB](https://www.debian.org/CD/faq/#write-usb)
+### [Download media](https://www.debian.org/distrib/netinst) from [mirrors](https://www.debian.org/CD/http-ftp/#mirrors) and [write image to a USB stick](https://www.debian.org/CD/faq/#write-usb)
 ```bash
 wget http://mirrors.163.com/debian-cd/current/amd64/iso-cd/debian-9.3.0-amd64-netinst.iso
 wget http://mirrors.163.com/debian-cd/current/amd64/iso-cd/SHA1SUMS
@@ -27,6 +27,7 @@ debfoster sudo vim tmux rsync
 # ~/.bashrc
 # ~/.bash_aliases
 # ~/.inputrc
+
 # ~/.vimrc
 # ~/.tmux.conf
 # ~/.screenrc
