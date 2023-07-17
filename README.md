@@ -12,6 +12,10 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/sdb bs=4M; sync
 
 ### System-Wide Configuration
 ```bash
+timedatectl status
+timedatectl list-timezones
+timedatectl set-timezone Asia/Shanghai
+
 # locale
 sudo vi /etc/default/locale     # add: LC_CTYPE=zh_CN.UTF-8
 sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
