@@ -12,6 +12,7 @@ sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/sdb bs=4M; sync
 
 ### System-Wide Configuration
 ```bash
+# timezone
 timedatectl status
 timedatectl list-timezones
 timedatectl set-timezone Asia/Shanghai
