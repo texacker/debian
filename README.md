@@ -10,6 +10,25 @@ shasum -c SHA1SUMS
 sudo dd if=debian-9.3.0-amd64-netinst.iso of=/dev/sdb bs=4M; sync
 ```
 
+### System-Wide Configuration
+```bash
+# locale
+sudo vi /etc/default/locale     # add: LC_CTYPE=zh_CN.UTF-8
+sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
+
+# users management
+sudo addgroup group
+sudo adduser -gid xxx user
+
+# update & upgrade
+sudo apt update && sudo apt upgrade
+
+# hostname & FQDN
+# sudo hostname <your_hostname>
+sudo vim /etc/hostname
+sudo vim /etc/hosts
+```
+
 ### Packages Management
 ```bash
 apt install debfoster
@@ -37,25 +56,6 @@ debfoster sudo vim tmux rsync
 ### System Tools
 ```bash
 sudo debfoster net-tools locales man-db resolvconf
-```
-
-### System-Wide Configuration
-```bash
-# locale
-sudo vi /etc/default/locale     # add: LC_CTYPE=zh_CN.UTF-8
-sudo dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
-
-# users management
-sudo addgroup group
-sudo adduser -gid xxx user
-
-# update & upgrade
-sudo apt update && sudo apt upgrade
-
-# hostname & FQDN
-# sudo hostname <your_hostname>
-sudo vim /etc/hostname
-sudo vim /etc/hosts
 ```
 
 ### Pubkey Authentication
