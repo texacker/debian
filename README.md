@@ -30,8 +30,10 @@ sudo apt update && sudo apt upgrade
 
 # hostname & FQDN
 # sudo hostname <your_hostname>
+# sudo hostnamectl set-hostname <your_hostname>
 sudo vim /etc/hostname
 sudo vim /etc/hosts
+
 ```
 
 ### Packages Management
