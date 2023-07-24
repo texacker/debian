@@ -226,17 +226,17 @@ sudo debfoster ibus-libpinyin
 #   Other wm
 #     exec /usr/bin/ibus-daemon --daemonize --xim --replace &
 
-#   From https://github.com/ibus/ibus/wiki/ReadMe
+# From https://github.com/ibus/ibus/wiki/ReadMe
 
-#     Run application using ibus
-#       For GTK application
-#         GTK_IM_MODULE=ibus gedit
+#   Run application using ibus
+#     For GTK application
+#       GTK_IM_MODULE=ibus gedit
 
-#       For KDE application
-#         QT_IM_MODULE=ibus kwrite
+#     For KDE application
+#       QT_IM_MODULE=ibus kwrite
 
-#       For old X application
-#         XMODIFIERS="@im=ibus" xterm
+#     For old X application
+#       XMODIFIERS="@im=ibus" xterm
 ```
 
 ### Enable/disable synaptics touchpad in Debian 9
