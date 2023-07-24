@@ -556,7 +556,7 @@ sudo debfoster libfastjson-dev libjson-c-dev libjsoncpp-dev nlohmann-json3-dev
 sudo debfoster jq jshon
 ```
 
-##  Install Debian on a MacBook Pro
+##  Install Debian on MacBook Pro
 ```bash
 sudo debfoster firmware-b43-installer
 ```
