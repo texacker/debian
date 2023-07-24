@@ -227,7 +227,6 @@ sudo debfoster ibus-libpinyin
 #     exec /usr/bin/ibus-daemon --daemonize --xim --replace &
 
 # From https://github.com/ibus/ibus/wiki/ReadMe
-
 #   Run application using ibus
 #     For GTK application
 #       GTK_IM_MODULE=ibus gedit
