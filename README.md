@@ -216,6 +216,7 @@ sudo debfoster ibus-libpinyin
 # Setup :
 # dex /usr/share/applications/ibus-setup.desktop
 # dex /usr/share/applications/ibus-setup-libpinyin.desktop
+# see https://wiki.archlinux.org/title/desktop_entries about .desktop file
 
 # Start(~/.xinitrc) :
 #   In GNOME
