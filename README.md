@@ -214,8 +214,8 @@ sudo debfoster gcolor2 gpick
 sudo debfoster ibus-libpinyin
 
 # Setup :
-#/usr/share/applications/ibus-setup.desktop
-#/usr/share/applications/ibus-setup-libpinyin.desktop
+# dex /usr/share/applications/ibus-setup.desktop
+# dex /usr/share/applications/ibus-setup-libpinyin.desktop
 
 # Start(~/.xinitrc) :
 #   In GNOME
