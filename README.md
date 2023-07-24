@@ -204,9 +204,39 @@ pacmd set-sink-volume NAME|#N VOLUME
 sudo debfoster xorg fontconfig
 sudo debfoster openbox tint2
 sudo debfoster obconf obmenu lxappearance
-sudo debfoster ibus-libpinyin
 sudo debfoster geany xfe mupdf okular firefox-esr
 sudo debfoster gcolor2 gpick
+```
+
+### Chinese Input Method
+```bash
+# Install :
+sudo debfoster ibus-libpinyin
+
+# Setup :
+#/usr/share/applications/ibus-setup.desktop
+#/usr/share/applications/ibus-setup-libpinyin.desktop
+
+# Start(~/.xinitrc) :
+#   In GNOME
+#     export XIM=ibus
+#     export XIM_PROGRAM="ibus-daemon"
+#     export XIM_ARGS="--daemonize --xim"
+
+#   Other wm
+#     exec /usr/bin/ibus-daemon --daemonize --xim --replace &
+
+#   From https://github.com/ibus/ibus/wiki/ReadMe
+
+#     Run application using ibus
+#       For GTK application
+$         GTK_IM_MODULE=ibus gedit
+
+#       For KDE application
+$         QT_IM_MODULE=ibus kwrite
+
+#       For old X application
+$         XMODIFIERS="@im=ibus" xterm
 ```
 
 ### Enable/disable synaptics touchpad in Debian 9
