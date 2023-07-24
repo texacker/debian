@@ -557,6 +557,9 @@ sudo debfoster jq jshon
 ```
 
 ##  Install Debian on a MacBook Pro
+```bash
+sudo debfoster firmware-b43-installer
+```
 
 ##  References
 1. [Debian 11 系统教程](https://www.rezhuji.com/os/debian11/)
