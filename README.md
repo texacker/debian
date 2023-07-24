@@ -230,10 +230,8 @@ sudo debfoster ibus-libpinyin
 #   Run application using ibus
 #     For GTK application
 #       GTK_IM_MODULE=ibus gedit
-
 #     For KDE application
 #       QT_IM_MODULE=ibus kwrite
-
 #     For old X application
 #       XMODIFIERS="@im=ibus" xterm
 ```
