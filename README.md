@@ -225,7 +225,7 @@ dex /usr/share/applications/ibus-setup-libpinyin.desktop
 #     export XIM_ARGS="--daemonize --xim"
 
 #   Other wm
-#     exec /usr/bin/ibus-daemon --daemonize --xim --replace &
+      exec /usr/bin/ibus-daemon --daemonize --xim --replace &
 
 # From https://github.com/ibus/ibus/wiki/ReadMe
 #   Run application using ibus
@@ -235,6 +235,8 @@ dex /usr/share/applications/ibus-setup-libpinyin.desktop
 #       QT_IM_MODULE=ibus kwrite
 #     For old X application
 #       XMODIFIERS="@im=ibus" xterm
+
+# See https://github.com/ibus/ibus/wiki/Debian
 ```
 
 ### Enable/disable synaptics touchpad in Debian 9
