@@ -392,7 +392,7 @@ sudo debfoster latexml dvipng mathtex mimetex latex2html bibtex2html
 ### MP3/Video Player
 ```bash
 sudo debfoster mpg321
-mpg321 -KZBv -l 0 [URL] &
+mpg321 --verbose -K --random --loop 0 -B [URL] &
 
 sudo debfoster dragonplayer
 dragon [URL] &
