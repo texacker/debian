@@ -350,7 +350,7 @@ sudo debfoster supervisor shadowsocks-libev proxychains privoxy
 # HTTP proxy
 sudo debfoster polipo
 
-sudo cp /usr/share/doc/polipo/examples/config.sample /etc/polipo/config
+sudo cat /usr/share/doc/polipo/examples/config.sample >> /etc/polipo/config
 sudo vim /etc/polipo/config
 
 sudo systemctl status polipo.service
