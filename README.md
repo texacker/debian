@@ -341,6 +341,17 @@ sudo debfoster unrar-free unar
 ### Utilities for GFW :-/
 ```bash
 sudo debfoster supervisor shadowsocks-libev proxychains privoxy
+
+# HTTP proxy
+sudo debfoster polipo
+
+sudo cp /usr/share/doc/polipo/examples/config.sample /etc/polipo/config
+sudo vim /etc/polipo/config
+
+sudo systemctl status polipo.service
+sudo systemctl restart polipo.service
+
+sudo view /var/log/polipo/polipo.log
 ```
 
 ### 截屏
