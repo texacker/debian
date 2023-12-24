@@ -582,6 +582,9 @@ sudo debfoster jq jshon
 ##  Install Debian on MacBook Pro
 ```bash
 sudo debfoster firmware-b43-installer
+
+# Control the CPU Frequency
+sudo debfoster cpufreqd cpufrequtils
 ```
 
 ##  References
