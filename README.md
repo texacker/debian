@@ -265,6 +265,11 @@ sudo debfoster xtrlock
 xtrlock -f && top
 ```
 
+### Print X events
+```bash
+xev
+```
+
 ### Linux on aliyun VPS
 ```bash
 # http://server.it168.com/a2018/0612/3208/000003208560.shtml
