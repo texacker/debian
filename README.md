@@ -585,6 +585,12 @@ sudo debfoster firmware-b43-installer
 
 # Control the CPU Frequency
 sudo debfoster cpufreqd cpufrequtils
+
+cat /proc/cpuinfo | grep MHz
+cpufreq-info -m | more
+
+# /etc/default/cpufrequtils
+sudo vim /etc/rc.local
 ```
 
 ##  References
