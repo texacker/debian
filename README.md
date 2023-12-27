@@ -592,6 +592,18 @@ cpufreq-info -m | more
 # /etc/default/cpufrequtils
 sudo vim /etc/rc.local
 
+# $HOME/.profile
+
+# $HOME/.bashrc
+
+# $HOME/.tmux.conf
+
+# $HOME/.vim
+
+# $XDG_CONFIG_HOME/geany/
+
+# $XDG_CONFIG_HOME/xfe/xferc
+
 sudo debfoster colordiff diffutils meld
 ```
 
