@@ -609,3 +609,4 @@ sudo debfoster colordiff diffutils meld
 
 ##  References
 1. [Debian 11 系统教程](https://www.rezhuji.com/os/debian11/)
+1. [XDG Base Directory Specification](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html)
