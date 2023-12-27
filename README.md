@@ -591,6 +591,8 @@ cpufreq-info -m | more
 
 # /etc/default/cpufrequtils
 sudo vim /etc/rc.local
+
+sudo debfoster colordiff diffutils meld
 ```
 
 ##  References
