@@ -1,0 +1,8 @@
+01 00   video colors for month name
+02 00   video colors for weekday header
+03 00   video colors for normal calendar days
+04 00   video colors for sundays
+05 00   video colors for current day
+06 00   bkgd for yearly calendar (space between months)
+07 00   video colors for special day descriptions
+08 00   video colors for * indicating descr.=today
