@@ -18,3 +18,6 @@ export ZLG_WS_PATH="$HOME/<your_zlg_ws>"
 # Qt
 export QT_WS_PATH="$HOME/<your_qt_ws>"
 
+# ghcup-env
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
+

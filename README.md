@@ -20,6 +20,10 @@ timedatectl set-timezone Asia/Shanghai
 # locale
 vi /etc/default/locale              # add: LC_CTYPE=zh_CN.UTF-8
 /usr/sbin/dpkg-reconfigure locales  # choose: en_US.UTF-8(default), zh_CN.UTF-8
+#
+# or:
+#
+# ~/.bash_locals
 
 # users management
 sudo addgroup group
