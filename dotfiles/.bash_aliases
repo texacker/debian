@@ -15,7 +15,7 @@ alias minicom='minicom -c on --capturefile=$HOME/.minicom/minicom.log'
 alias astyle='astyle --style=bsd -s4 -n'
 alias ccaly='ccal --y'
 alias ccalm='ccal `/usr/bin/date +"%B"`'
-alias apg='apg -n 1 -m 16 -x 16 -M LNC'
+alias apg='apg -n 1 -m 64 -x 64 -M SNCL'
 alias tidy='tidy -config ~/.tidy.conf -f ~/.tidy/err.log'
 alias rsync='rsync -avzP --delete -e ssh'
 
