@@ -609,6 +609,14 @@ sudo vim /etc/rc.local
 # $XDG_CONFIG_HOME/xfe/xferc
 
 sudo debfoster colordiff diffutils meld
+
+# Visual Studio Code
+sudo apt update && sudo apt upgrade
+sudo debfoster gnupg2 dirmngr ca-certificates software-properties-common apt-transport-https curl
+curl -fsSL https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo debfoster code
 ```
 
 ##  References
