@@ -2,8 +2,9 @@
 #alias ll='ls -l'
 alias la='ls -AF'
 #alias l='ls -CF'
+#alias ll='ls -lAF'
+alias ll='LC_COLLATE=C ls -lAF --group-directories-first'
 
-alias ll='ls -lAF'
 alias tmux='tmux -2'
 alias more='less -R'
 #alias suapt='sudo apt update && sudo apt upgrade'
