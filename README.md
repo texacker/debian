@@ -50,7 +50,7 @@ debfoster -q
 # or don't read the debfoster database and start with an empty list
 debfoster -n
 
-debfoster sudo vim vim-doc tmux rsync
+sudo debfoster vim vim-doc tmux rsync
 
 # Basic Configurations:
 
