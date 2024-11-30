@@ -18,8 +18,8 @@ timedatectl list-timezones
 timedatectl set-timezone Asia/Shanghai
 
 # locale
-vi /etc/default/locale              # add: LC_CTYPE=zh_CN.UTF-8
-/usr/sbin/dpkg-reconfigure locales  # choose: en_US.UTF-8(default), zh_CN.UTF-8
+vi /etc/default/locale                                          # add: LC_CTYPE=zh_CN.UTF-8
+env PATH="/usr/sbin:$PATH" /usr/sbin/dpkg-reconfigure locales   # choose: en_US.UTF-8(default), zh_CN.UTF-8
 #
 # or:
 #
