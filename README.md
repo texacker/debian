@@ -378,7 +378,7 @@ sudo debfoster astyle
 astyle --style=bsd -s4 [ -r ] [ --dry-run | -n ] "./*.cpp"
 
 # code to HTML
-sudo debfoster source-highlight
+sudo debfoster source-highlight python3-pygments
 source-highlight --data-dir ~/.source-highlight -d --tab=4 -i input_file -o output_file
 sed -i -e 's/<body bgcolor="[^"]*">/<body bgcolor="#D4D0C8">/' -e 's/charset=iso-8859-1/charset=utf-8/' output_file
 
