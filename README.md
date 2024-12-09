@@ -416,6 +416,9 @@ mpg321 --verbose -K --random --loop 0 -B [URL] &
 
 sudo debfoster dragonplayer
 dragon [URL] &
+
+sudo debfoster vlc
+vlc [ITEMS] &
 ```
 
 ### Screen Recorder
